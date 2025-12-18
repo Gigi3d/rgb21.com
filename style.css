@@ -302,6 +302,17 @@ body.dual-page-mode {
     color: #cecece;
 }
 
+.description-subtitle {
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    display: block;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+
 /* Responsive Layout Updates */
 @media (max-width: 1100px) {
 
