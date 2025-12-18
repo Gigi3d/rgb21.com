@@ -704,10 +704,17 @@ body.dual-page-mode {
 }
 
 .tier-card.active {
-    border-color: var(--accent-gold);
-    background: rgba(251, 191, 36, 0.05);
-    box-shadow: 0 0 30px rgba(251, 191, 36, 0.1);
+    border-color: rgba(251, 191, 36, 0.5);
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.08) 0%, rgba(20, 20, 20, 0.6) 100%);
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.15), inset 0 0 15px rgba(251, 191, 36, 0.05);
 }
+
+.tier-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(251, 191, 36, 0.2);
+}
+
 
 .tier-header {
     display: flex;
@@ -733,74 +740,53 @@ body.dual-page-mode {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.25rem;
+    gap: 0.35rem;
 }
 
-/* Right Column Badge Refinement */
+/* Premium Badge Refinement */
 .status-active {
     display: inline-block;
-    color: var(--accent-gold);
-    font-size: 0.75rem;
-    font-weight: 700;
-    background: rgba(251, 191, 36, 0.1);
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-}
-
-
-.supply-txt {
-    color: var(--text-main);
-    font-size: 0.95rem;
-    font-weight: 500;
-}
-
-.tier-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.tier-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-/* Price Row Refinement */
-.btc-price {
-    font-size: 1.2rem;
-    font-weight: 700;
     color: #fff;
-}
-
-.btc-symbol {
-    color: #f7931a;
-    /* Bitcoin orange */
-    margin-right: 4px;
-}
-
-.sats-txt {
-    color: #666;
-    font-weight: 400;
-    margin-left: 4px;
-}
-
-.per-wallet {
-    color: var(--text-secondary);
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
-    opacity: 0.8;
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Price Row Refinement - High-End Aesthetic */
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0;
+}
+
+.btc-price {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .usd-price {
-    color: #f59e0b;
-    /* Amber/Orange */
-    font-size: 0.85rem;
-    font-weight: 500;
-    margin-left: 6px;
+    color: rgba(251, 191, 36, 0.9);
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: inherit;
+    background: rgba(251, 191, 36, 0.12);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    backdrop-filter: blur(4px);
 }
+
 
 
 /* Button Refinement */
