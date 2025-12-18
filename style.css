@@ -146,7 +146,7 @@ body {
     font-weight: 500;
 }
 
-/* Consolidated into lines 42-60 */
+
 
 .user-actions {
     display: flex;
@@ -225,9 +225,9 @@ body.dual-page-mode {
     padding: 1rem 1.5rem 3rem 1.5rem;
 }
 
-/* Consolidated into lines 42-60 */
 
-/* Consolidated into lines 42-60 */
+
+
 
 /* Layout Variations */
 .layout.single-focus,
@@ -391,6 +391,15 @@ body.dual-page-mode {
 
     .stat-badge {
         flex: 1;
+    }
+
+    /* Consolidated from previous FAQ block */
+    .faq-title {
+        font-size: 2rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
     }
 }
 
@@ -663,15 +672,7 @@ body.dual-page-mode {
     max-height: 500px;
 }
 
-@media (max-width: 768px) {
-    .faq-title {
-        font-size: 2rem;
-    }
 
-    .faq-question {
-        font-size: 1rem;
-    }
-}
 
 
 
