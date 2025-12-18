@@ -730,21 +730,24 @@ body.dual-page-mode {
 }
 
 .tier-status {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
 }
 
 /* Right Column Badge Refinement */
 .status-active {
     display: inline-block;
     color: var(--accent-gold);
-    font-size: 0.85rem;
-    font-weight: 600;
-    background: #1f1f1f;
-    padding: 0.4rem 0.8rem;
-    border-radius: 999px;
-    margin-right: 0.5rem;
-    vertical-align: middle;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: rgba(251, 191, 36, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
 }
+
 
 .supply-txt {
     color: var(--text-main);
@@ -784,10 +787,21 @@ body.dual-page-mode {
 }
 
 .per-wallet {
-    color: #666;
-    font-size: 0.9rem;
-    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.8;
 }
+
+.usd-price {
+    color: #f59e0b;
+    /* Amber/Orange */
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 6px;
+}
+
 
 /* Button Refinement */
 .mint-btn {
