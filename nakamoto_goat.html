@@ -24,11 +24,16 @@
             <span class="diba">DIBA</span><span class="bitcoin-signet">bitcoin signet</span>
         </div>
         <nav class="nav-links">
-            <a href="goddess_test.html">Goddess Test</a>
-            <a href="nakamoto_goat.html" class="active">Nakamoto GOAT</a>
-            <a href="space_goat.html">Space GOAT</a>
+            <a href="goddess_test.html" data-i18n="nav_goddess">Goddess Test</a>
+            <a href="nakamoto_goat.html" class="active" data-i18n="nav_nakamoto">Nakamoto GOAT</a>
+            <a href="space_goat.html" data-i18n="nav_space">Space GOAT</a>
         </nav>
         <div class="user-actions">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="zh">ZH</button>
+            </div>
             <span class="user-handle">Lord</span>
             <div class="user-avatar">
                 <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lord" alt="Avatar">
@@ -47,15 +52,17 @@
                     <div class="image-card">
                         <img src="assets/Nakamoto.GOAT.png" alt="Nakamoto GOAT" class="hero-image">
                         <div class="guardian-overlay">
-                            <span class="fairy-name">Nakamoto GOAT</span>
-                            <span class="fairy-title">RGB21 collectible</span>
+                            <span class="fairy-name" data-i18n="nakamoto_name">Nakamoto GOAT</span>
+                            <span class="fairy-title" data-i18n="hero_collectible">RGB21 collectible</span>
                         </div>
                     </div>
                 </div>
                 <div class="rebranded-description compact">
-                    <span class="description-subtitle"><b>THE GENESIS BLUEPRINT ~ WHERE THE BITCOIN ODYSSEY
+                    <span class="description-subtitle" data-i18n="nakamoto_subtitle"><b>THE GENESIS BLUEPRINT ~ WHERE
+                            THE BITCOIN ODYSSEY
                             BEGAN</b></span>
-                    <p>A phantom of the silver night, Nakamoto GOAT silences the noise of the network to preserve order.
+                    <p data-i18n="nakamoto_desc">A phantom of the silver night, Nakamoto GOAT silences the noise of the
+                        network to preserve order.
                         Summon the moonlight's favor today.</p>
                 </div>
             </section>
@@ -64,7 +71,7 @@
             <section class="mint-section sticky-sidebar reveal">
                 <div class="top-stats">
                     <div class="stat-badge">
-                        <span class="label">TOTAL SUPPLY</span>
+                        <span class="label" data-i18n="total_supply">TOTAL SUPPLY</span>
                         <span class="value">1,111</span>
                     </div>
                     <span class="uda-tag">UDA</span>
@@ -74,8 +81,9 @@
                     <div class="tier-card active highlighted-tier solo-tier">
                         <div class="tier-header">
                             <div class="tier-title-group">
-                                <span class="tier-title">Celestial Mint</span>
-                                <span class="mint-date">Starts Jan 12, 2026</span>
+                                <span class="tier-title" data-i18n="nakamoto_mint_title">Celestial Mint</span>
+                                <span class="mint-date"><span data-i18n="mint_date_prefix">Starts</span> Jan 12,
+                                    2026</span>
                             </div>
                             <div class="tier-status">
                                 <span class="countdown-timer" id="nakamoto-timer">00d 00h 00m 00s</span>
@@ -86,14 +94,15 @@
                                 <span class="btc-price">₿ 0.0115 BTC</span>
                                 <span class="usd-price">$1000</span>
                             </div>
-                            <button class="mint-btn highlighted">Summon Nakamoto GOAT</button>
+                            <button class="mint-btn highlighted" data-i18n="summon_btn"
+                                data-i18n-vars='{"name": "Nakamoto GOAT"}'>Summon Nakamoto GOAT</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="total-minted">
                     <div class="mint-progress-info">
-                        <span>Moonlight Stability</span>
+                        <span data-i18n="stability">Moonlight Stability</span>
                         <span class="progress-percent" data-percent="70" data-count="777" data-total="1111">0%
                             (0/0)</span>
                     </div>
@@ -108,17 +117,18 @@
     <!-- Feature Banner -->
     <div class="feature-banner reveal">
         <div class="feature-banner-content">
-            <h2>Future of<br>Bitcoin:<br>Season 3</h2>
+            <h2 data-i18n="feature_banner_title">Future of<br>Bitcoin:<br>Season 3</h2>
         </div>
         <div class="feature-banner-text">
-            <p>The GOATs are arriving. Powered by <strong>Bitmask</strong> and <strong>DIBA</strong>, we are ushering in
+            <p data-i18n="feature_banner_text">The GOATs are arriving. Powered by <strong>Bitmask</strong> and
+                <strong>DIBA</strong>, we are ushering in
                 a new era of RGB Inscriptions.</p>
-            <p>Join the revolution of client-side validated digital artifacts.</p>
+            <p data-i18n="feature_banner_subtext">Join the revolution of client-side validated digital artifacts.</p>
         </div>
     </div>
 
     <section class="faq-section reveal">
-        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <h2 class="faq-title" data-i18n="faq_title">Frequently Asked Questions</h2>
         <div class="faq-container">
             <div class="faq-item">
                 <div class="faq-question">
@@ -252,13 +262,14 @@
     </section>
 
     <div class="design-switcher">
-        <a href="nakamoto_goat.html" class="active">Standard</a>
-        <a href="nakamoto_goat_classic.html">Classic</a>
+        <a href="nakamoto_goat.html" class="active" data-i18n="standard">Standard</a>
+        <a href="nakamoto_goat_classic.html" data-i18n="classic">Classic</a>
     </div>
 
-    <button class="floating-mint-cta">Summon GOAT</button>
+    <button class="floating-mint-cta" data-i18n="summon_btn" data-i18n-vars='{"name": "GOAT"}'>Summon GOAT</button>
 
-    <script src="main.js"></script>
+    <script src="translations.js" type="module"></script>
+    <script src="main.js" type="module"></script>
     <script src="galaxy.js"></script>
 </body>
 

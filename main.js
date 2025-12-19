@@ -1,4 +1,66 @@
+import translations from './translations.js';
+
+class LanguageManager {
+    constructor() {
+        this.currentLang = localStorage.getItem('btc_season3_lang') ||
+            (navigator.language.startsWith('zh') ? 'zh' : 'en');
+        this.init();
+    }
+
+    init() {
+        this.updateButtons();
+        this.translatePage();
+        this.applyLanguageToBody();
+    }
+
+    setLanguage(lang) {
+        this.currentLang = lang;
+        localStorage.setItem('btc_season3_lang', lang);
+        this.init();
+    }
+
+    applyLanguageToBody() {
+        document.documentElement.lang = this.currentLang;
+    }
+
+    updateButtons() {
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === this.currentLang);
+            btn.addEventListener('click', () => this.setLanguage(btn.dataset.lang), { once: true });
+        });
+    }
+
+    translatePage() {
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            let translation = translations[this.currentLang][key] || translations['en'][key];
+
+            if (translation) {
+                // Handle interpolation
+                const vars = el.getAttribute('data-i18n-vars');
+                if (vars) {
+                    const parsedVars = JSON.parse(vars);
+                    Object.keys(parsedVars).forEach(v => {
+                        translation = translation.replace(`{${v}}`, parsedVars[v]);
+                    });
+                }
+
+                // Keep inner HTML structure if it contains tags like <b> or <br>
+                if (translation.includes('<')) {
+                    el.innerHTML = translation;
+                } else {
+                    el.textContent = translation;
+                }
+            }
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    const langManager = new LanguageManager();
+
+    // ... (keep the rest of the existing logic) ...
     // Progress bar animation simulation
     const progressBar = document.querySelector('.progress-bar');
     const progressPercent = document.querySelector('.progress-percent');

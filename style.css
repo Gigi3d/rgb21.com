@@ -7,6 +7,7 @@
     --accent-gold: #fbbf24;
     --accent-gold-dim: #92400e;
     --btn-disabled: #27272a;
+    --transition-speed: 0.3s;
     --btn-disabled-text: #52525b;
     --font-main: 'Inter', sans-serif;
 }
@@ -209,6 +210,56 @@ body {
     to {
         background-position: 200% center;
     }
+}
+
+/* User Actions & Lang Switcher */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    padding: 4px 12px;
+    border-radius: 100px;
+    border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 2px 4px;
+}
+
+.lang-btn:hover {
+    color: var(--text-main);
+}
+
+.lang-btn.active {
+    color: var(--accent-gold);
+}
+
+.lang-divider {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 0.7rem;
+}
+
+.user-handle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    text-transform: lowercase;
 }
 
 /* Navbar */
