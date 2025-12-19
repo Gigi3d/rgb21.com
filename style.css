@@ -1085,34 +1085,25 @@ body.dual-page-mode {
     border: 1px solid rgba(251, 191, 36, 0.2);
 }
 
-/* Design Switcher - Floating Bottom */
+/* Design Switcher - Static Bottom */
 .design-switcher {
-    position: fixed;
-    bottom: 2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(20px);
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
     padding: 6px;
     border-radius: 100px;
-    /* Pillow shape */
-    border: 1px solid rgba(251, 191, 36, 0.2);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(251, 191, 36, 0.05);
-    z-index: 9999;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.design-switcher:hover {
-    bottom: 2.7rem;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(251, 191, 36, 0.1);
-    border-color: rgba(251, 191, 36, 0.4);
+    border: 1px solid rgba(251, 191, 36, 0.1);
+    width: fit-content;
+    margin: 6rem auto 2rem;
+    position: relative;
+    z-index: 10;
 }
 
 .design-switcher a {
-    padding: 10px 24px;
+    padding: 8px 20px;
     border-radius: 100px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-decoration: none;
     color: #9ca3af;
@@ -1128,7 +1119,55 @@ body.dual-page-mode {
 
 .design-switcher a:not(.active):hover {
     color: #fff;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Floating Mint CTA */
+.floating-mint-cta {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(150%);
+    background: var(--accent-gold);
+    color: #000;
+    padding: 1rem 2.5rem;
+    border-radius: 100px;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.floating-mint-cta.active {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-mint-cta:hover {
+    transform: translateX(-50%) translateY(-5px) scale(1.05);
+    background: #fcd34d;
+    box-shadow: 0 15px 40px rgba(251, 191, 36, 0.5);
+}
+
+.floating-mint-cta::after {
+    content: "→";
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.floating-mint-cta:hover::after {
+    transform: translateX(5px);
 }
 
 /* Feature Banner - Season 3 Premium */
