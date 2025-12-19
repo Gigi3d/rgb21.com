@@ -148,40 +148,6 @@ body {
     /* Increased gap for better spacing */
 }
 
-/* Nav Links Premium Hover & Active */
-.nav-links a {
-    color: var(--text-main);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    opacity: 0.6;
-    /* Slightly dimmer by default for better focus on active */
-    position: relative;
-    padding-bottom: 8px;
-    /* More space for the underline */
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--accent-gold);
-    opacity: 1;
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 3px;
-    background: var(--accent-gold);
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 4px;
-    box-shadow: 0 0 12px var(--accent-gold), 0 0 4px var(--accent-gold);
-}
-
 .nav-links a:hover::after,
 .nav-links a.active::after {
     width: 100%;
@@ -1229,27 +1195,6 @@ body.dual-page-mode {
     transform: translateY(0);
 }
 
-/* Smooth Navigation Transitions */
-.nav-links a {
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--accent-gold);
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after {
-    width: 100%;
-}
 
 /* Enhanced Image Card Hover */
 .image-card {
