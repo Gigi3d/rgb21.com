@@ -35,7 +35,7 @@ const translations = {
         // Goddess Specific
         goddess_subtitle: "The chicken or Egg",
         goddess_desc: "With a free public mint, 210 unique holders will be blessed with the Goddess GOAT of charity and world peace. Testing the RGB infrastructure and birthing Bitcoin Season 3.",
-        goddess_mint_title: "Celestial Test Mint",
+        goddess_mint_title: "Infrastructure test",
         free_mint: "FREE MINT",
         // FAQ items
         faq_q1: "Bitcoin Season 3 -- RGB",
@@ -95,7 +95,7 @@ const translations = {
         // Goddess Specific
         goddess_subtitle: "先有鸡还是先有蛋",
         goddess_desc: "通过免费的公开铸造，210 位独特的持有者将获得象征慈善与世界和平的女神 GOAT 的祝福。测试 RGB 基础设施，孕育比特币第三季。",
-        goddess_mint_title: "天体测试铸造",
+        goddess_mint_title: "基础设施测试",
         free_mint: "免费铸造",
         // FAQ items
         faq_q1: "比特币第三季 -- RGB",
