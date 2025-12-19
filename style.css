@@ -974,6 +974,76 @@ body.dual-page-mode {
     /* Overriding default nav opacity */
 }
 
+/* Feature Banner - Season 3 */
+.feature-banner {
+    background: #fbbf24;
+    color: #000;
+    border-radius: 24px;
+    padding: 3.5rem 3rem;
+    margin: 4rem auto 2rem;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    box-shadow: 0 0 50px rgba(251, 191, 36, 0.2);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+.feature-banner-content h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.feature-banner-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    max-width: 500px;
+}
+
+.feature-banner-text strong {
+    font-weight: 800;
+}
+
+.feature-cta {
+    display: inline-block;
+    background: #000;
+    color: #fbbf24;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.feature-cta:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .feature-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .feature-banner-content h2 {
+        font-size: 2rem;
+    }
+}
+
 .design-switcher a::after {
     display: none !important;
     /* No underline for switcher */
