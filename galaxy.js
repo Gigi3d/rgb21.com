@@ -15,10 +15,11 @@ function createShootingStars() {
         star.className = 'shooting-star';
         star.style.left = `${Math.random() * 100}%`;
         star.style.top = `${Math.random() * 100}%`;
-        star.style.animationDelay = `${Math.random() * 3000}ms`;
+        star.style.animationDelay = `${Math.random() * 2000}ms`;
+        star.style.animationDuration = `${2000 + Math.random() * 4000}ms`;
         container.appendChild(star);
-        setTimeout(() => star.remove(), 3000);
-    }, 2000);
+        setTimeout(() => star.remove(), 6000);
+    }, 1500);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
