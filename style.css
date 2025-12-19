@@ -27,18 +27,108 @@ body {
     min-height: 100vh;
 }
 
-/* Subtle premium grain noise overlay */
-body::before {
-    content: "";
+/* Galaxy Background Container */
+.stars-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-    opacity: 0.03;
-    pointer-events: none;
-    z-index: 9999;
+    z-index: -1;
+    background: #000;
+    overflow: hidden;
+}
+
+#stars,
+#stars2,
+#stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 200%;
+    height: 200%;
+    background: transparent;
+}
+
+#stars {
+    width: 1px;
+    height: 1px;
+    box-shadow: 1744px 119px #FFF, 357px 1475px #FFF, 1802px 556px #FFF, 168px 1056px #FFF, 1121px 1974px #FFF;
+    /* Simplified for brevity, will generate better ones */
+    animation: twinkle 10s infinite;
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    box-shadow: 489px 156px #FFF, 1204px 1345px #FFF, 892px 678px #FFF;
+    animation: twinkle 15s infinite;
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    box-shadow: 120px 880px #FFF, 1500px 200px #FFF;
+    animation: twinkle 20s infinite;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Shooting Stars */
+#shooting-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shooting-star {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 2px;
+    background: linear-gradient(-45deg, rgba(251, 191, 36, 1), rgba(0, 0, 255, 0));
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px rgba(251, 191, 36, 1));
+    animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+
+@keyframes tail {
+    0% {
+        width: 0;
+    }
+
+    30% {
+        width: 100px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes shooting {
+    0% {
+        transform: translateX(0) translateY(0) rotate(45deg);
+    }
+
+    100% {
+        transform: translateX(-500px) translateY(500px) rotate(45deg);
+    }
 }
 
 /* Navbar Enhancements */
@@ -1016,8 +1106,7 @@ body.dual-page-mode {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-    opacity: 0.08;
+    background: radial-gradient(circle at center, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
     pointer-events: none;
 }
 
