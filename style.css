@@ -25,8 +25,7 @@ body {
     line-height: 1.6;
     /* Increased breathing room */
     overflow-x: hidden;
-    background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #000 100%);
-    /* Subtle ambient light */
+    /* pure black background */
 }
 
 /* Navbar Enhancements */
@@ -514,24 +513,40 @@ body.dual-page-mode {
 }
 
 .stat-badge {
-    background: var(--card-bg);
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 0.85rem 1.5rem;
+    border-radius: 16px;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.75rem;
     align-items: center;
-    font-size: 0.85rem;
-    border: 1px solid var(--card-border);
+    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-badge:hover {
+    border-color: rgba(251, 191, 36, 0.3);
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.1);
 }
 
 .stat-badge .label {
-    color: var(--text-secondary);
+    color: #9ca3af;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
 .stat-badge .value {
     color: var(--accent-gold);
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-shadow: 0 0 12px rgba(251, 191, 36, 0.25);
 }
+
+
 
 .uda-tag {
     background: linear-gradient(135deg, #2a2a2e 0%, #1a1a1a 100%);
