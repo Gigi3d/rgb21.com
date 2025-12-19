@@ -978,37 +978,48 @@ body.dual-page-mode {
 .feature-banner {
     background: #fbbf24;
     color: #000;
-    border-radius: 12px;
-    padding: 3rem 2.5rem;
-    margin: 4rem auto;
-    max-width: 1000px;
-    /* Match standard width */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 4rem 5%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    box-shadow: 0 0 30px rgba(251, 191, 36, 0.15);
-    position: relative;
+    justify-content: center;
+    gap: 4rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+}
+
+.feature-banner-content {
+    flex-shrink: 0;
 }
 
 .feature-banner h2 {
     font-family: 'Outfit', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 900;
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: -2px;
 }
 
 .feature-banner-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    line-height: 1.5;
     font-weight: 500;
+    max-width: 600px;
 }
 
 .feature-banner-text strong {
     font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 /* Mobile responsive */
