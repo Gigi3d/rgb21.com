@@ -1178,7 +1178,88 @@ body.dual-page-mode {
     transform: translateX(5px);
 }
 
-/* Feature Banner - Season 3 Premium */
+/* Floating Mint CTA */
+.floating-mint-cta {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(150%);
+    background: var(--accent-gold);
+    color: #000;
+    padding: 1.2rem 3rem;
+    border-radius: 100px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(251, 191, 36, 0.4);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.floating-mint-cta.active {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-mint-cta:hover {
+    transform: translateX(-50%) translateY(-5px) scale(1.05);
+    background: #fcd34d;
+    box-shadow: 0 15px 40px rgba(251, 191, 36, 0.6), 0 0 20px rgba(251, 191, 36, 0.4);
+}
+
+/* Entrance Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    will-change: transform, opacity;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth Navigation Transitions */
+.nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gold);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Enhanced Image Card Hover */
+.image-card {
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.6s ease;
+}
+
+.image-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(251, 191, 36, 0.1);
+}
+
 .feature-banner {
     background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
     color: #000;

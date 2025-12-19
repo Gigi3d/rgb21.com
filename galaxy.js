@@ -32,4 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (s3) s3.style.boxShadow = generateStars(100);
 
     createShootingStars();
+
+    // Star Parallax
+    window.addEventListener('scroll', () => {
+        const scrollY = window.pageYOffset;
+        if (s1) s1.style.transform = `translateY(${scrollY * 0.05}px)`;
+        if (s2) s2.style.transform = `translateY(${scrollY * 0.15}px)`;
+        if (s3) s3.style.transform = `translateY(${scrollY * 0.25}px)`;
+    }, {
+        passive: true
+    });
 });
