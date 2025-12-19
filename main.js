@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formatNumber = (num) => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
             progressBar.style.width = `${targetProgress}%`;
-            progressBar.style.background = '#fcd34d'; // Gold fill for the 70%
+            progressBar.style.background = '#fbbf24'; // Gold fill for the 70%
             progressPercent.textContent = `${targetProgress}% (${formatNumber(targetCount)}/${formatNumber(total)})`;
         }, 800);
     }

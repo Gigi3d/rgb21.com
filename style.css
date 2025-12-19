@@ -762,16 +762,16 @@ body.dual-page-mode {
 /* Premium Badge Refinement */
 .status-active {
     display: inline-block;
-    color: #fff;
+    color: #000;
     font-size: 0.7rem;
     font-weight: 800;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    background: #fbbf24;
     padding: 0.25rem 0.75rem;
     border-radius: 6px;
     letter-spacing: 1px;
-    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.6);
+    border: none;
 }
 
 /* Price Row Refinement - High-End Aesthetic */
