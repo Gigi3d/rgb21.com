@@ -63,6 +63,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Countdown Timer Logic
+    const startCountdown = (elementId, targetDateStr) => {
+        const element = document.getElementById(elementId);
+        if (!element) return;
+
+        const targetDate = new Date(targetDateStr).getTime();
+
+        const updateTimer = () => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                element.textContent = "LIVE NOW";
+                element.classList.add('live');
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            element.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        };
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    };
+
+    startCountdown('space-goat-timer', 'January 12, 2026 00:00:00');
+    startCountdown('space-goat-timer-classic', 'January 12, 2026 00:00:00');
+
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
