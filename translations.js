@@ -26,7 +26,7 @@ const translations = {
         // Nakamoto Specific
         nakamoto_subtitle: "THE GENESIS BLUEPRINT ~ WHERE THE BITCOIN ODYSSEY BEGAN",
         nakamoto_desc: "A phantom of the silver night, Nakamoto GOAT silences the noise of the network to preserve order. Summon the moonlight's favor today.",
-        nakamoto_mint_title: "Celestial Mint",
+        nakamoto_mint_title: "Elite Mint",
         // Space Specific
         space_subtitle: "THE FINAL FRONTIER ~ REACHING NEW HEIGHTS IN THE MINTVERSE",
         space_desc: "An ancient spirit of pure light, Space GOAT protects the Bitcoin network with sun-kissed grace. Establish your soul-bond and claim the stars.",
@@ -86,7 +86,7 @@ const translations = {
         // Nakamoto Specific
         nakamoto_subtitle: "创世蓝图 ~ 比特币奥德赛的起源",
         nakamoto_desc: "中本聪 GOAT 是银色夜晚的幻影，它平息了网络的嘈杂以维持秩序。今天就来寻求月光的垂青吧。",
-        nakamoto_mint_title: "天体铸造",
+        nakamoto_mint_title: "精英铸造",
         // Space Specific
         space_subtitle: "最后的边界 ~ 在铸造元宇宙中达到新高度",
         space_desc: "太空 GOAT 是纯净光芒的古老灵魂，以阳光般的优雅守护着比特币网络。建立你的灵魂纽带，摘取星辰。",
