@@ -24,11 +24,16 @@
             <span class="diba">DIBA</span><span class="bitcoin-signet">bitcoin signet</span>
         </div>
         <nav class="nav-links">
-            <a href="goddess_test.html">Goddess Test</a>
-            <a href="nakamoto_goat.html">Nakamoto GOAT</a>
-            <a href="space_goat.html" class="active">Space GOAT</a>
+            <a href="goddess_test.html" data-i18n="nav_goddess">Goddess Test</a>
+            <a href="nakamoto_goat.html" data-i18n="nav_nakamoto">Nakamoto GOAT</a>
+            <a href="space_goat.html" class="active" data-i18n="nav_space">Space GOAT</a>
         </nav>
         <div class="user-actions">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="zh">ZH</button>
+            </div>
             <span class="user-handle">Lord</span>
             <div class="user-avatar">
                 <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lord" alt="Avatar">
@@ -47,15 +52,17 @@
                     <div class="image-card">
                         <img src="assets/Space.GOAT.png" alt="Space GOAT" class="hero-image">
                         <div class="guardian-overlay">
-                            <span class="fairy-name">Space GOAT</span>
-                            <span class="fairy-title">RGB21 collectible</span>
+                            <span class="fairy-name" data-i18n="space_name">Space GOAT</span>
+                            <span class="fairy-title" data-i18n="hero_collectible">RGB21 collectible</span>
                         </div>
                     </div>
                 </div>
                 <div class="rebranded-description compact">
-                    <span class="description-subtitle"><b>THE FINAL FRONTIER ~ REACHING NEW HEIGHTS IN THE
+                    <span class="description-subtitle" data-i18n="space_subtitle"><b>THE FINAL FRONTIER ~ REACHING NEW
+                            HEIGHTS IN THE
                             MINTVERSE</b></span>
-                    <p>An ancient spirit of pure light, Space GOAT protects the Bitcoin network with sun-kissed grace.
+                    <p data-i18n="space_desc">An ancient spirit of pure light, Space GOAT protects the Bitcoin network
+                        with sun-kissed grace.
                         Establish your soul-bond and claim the stars.</p>
                 </div>
             </section>
@@ -64,7 +71,7 @@
             <section class="mint-section sticky-sidebar reveal">
                 <div class="top-stats">
                     <div class="stat-badge">
-                        <span class="label">TOTAL SUPPLY</span>
+                        <span class="label" data-i18n="total_supply">TOTAL SUPPLY</span>
                         <span class="value">10,000</span>
                     </div>
                     <span class="uda-tag">UDA</span>
@@ -74,11 +81,12 @@
                     <div class="tier-card locked">
                         <div class="tier-header">
                             <div class="tier-title-group">
-                                <span class="tier-title">OG Whitelist 🔒</span>
-                                <span class="mint-date">Starts Jan 12, 2026</span>
+                                <span class="tier-title" data-i18n="space_wl_title">OG Whitelist 🔒</span>
+                                <span class="mint-date"><span data-i18n="mint_date_prefix">Starts</span> Jan 12,
+                                    2026</span>
                             </div>
                             <div class="tier-status">
-                                <span class="countdown-timer" id="space-goat-wl-timer">00d 00h 00m 00s</span>
+                                <span class="countdown-timer" id="space-goat-wl-timer-classic">00d 00h 00m 00s</span>
                             </div>
                         </div>
                         <div class="tier-body">
@@ -93,11 +101,12 @@
                     <div class="tier-card active highlighted-tier solo-tier">
                         <div class="tier-header">
                             <div class="tier-title-group">
-                                <span class="tier-title">Open mint</span>
-                                <span class="mint-date">Starts Jan 12, 2026</span>
+                                <span class="tier-title" data-i18n="space_mint_title">Open mint</span>
+                                <span class="mint-date"><span data-i18n="mint_date_prefix">Starts</span> Jan 12,
+                                    2026</span>
                             </div>
                             <div class="tier-status">
-                                <span class="countdown-timer" id="space-goat-timer">00d 00h 00m 00s</span>
+                                <span class="countdown-timer" id="space-goat-timer-classic">00d 00h 00m 00s</span>
                             </div>
                         </div>
                         <div class="tier-body">
@@ -105,14 +114,15 @@
                                 <span class="btc-price">₿ 0.00115 BTC</span>
                                 <span class="usd-price">$100</span>
                             </div>
-                            <button class="mint-btn highlighted">Summon Space GOAT</button>
+                            <button class="mint-btn highlighted" data-i18n="summon_btn"
+                                data-i18n-vars='{"name": "Space GOAT"}'>Summon Space GOAT</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="total-minted">
                     <div class="mint-progress-info">
-                        <span>Summoning Progress</span>
+                        <span data-i18n="progress">Summoning Progress</span>
                         <span class="progress-percent" data-percent="70" data-count="7000" data-total="10000">0%
                             (0/0)</span>
                     </div>
@@ -271,13 +281,14 @@
     </section>
 
     <div class="design-switcher">
-        <a href="space_goat_classic.html" class="active">Standard</a>
-        <a href="space_goat.html">Classic</a>
+        <a href="space_goat_classic.html" class="active" data-i18n="standard">Standard</a>
+        <a href="space_goat.html" data-i18n="classic">Classic</a>
     </div>
 
-    <button class="floating-mint-cta">Summon GOAT</button>
+    <button class="floating-mint-cta" data-i18n="summon_btn" data-i18n-vars='{"name": "GOAT"}'>Summon GOAT</button>
 
-    <script src="main.js"></script>
+    <script src="translations.js" type="module"></script>
+    <script src="main.js" type="module"></script>
     <script src="galaxy.js"></script>
 </body>
 
