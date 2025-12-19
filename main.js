@@ -119,4 +119,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    // Floating CTA scroll logic
+    const floatingCta = document.querySelector('.floating-mint-cta');
+    const mintSection = document.querySelector('.mint-section');
+
+    if (floatingCta && mintSection) {
+        window.addEventListener('scroll', () => {
+            const mintRect = mintSection.getBoundingClientRect();
+            // Show button after user scrolls past the middle of the mint section
+            if (mintRect.bottom < (window.innerHeight / 2)) {
+                floatingCta.classList.add('active');
+            } else {
+                floatingCta.classList.remove('active');
+            }
+        });
+
+        floatingCta.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
