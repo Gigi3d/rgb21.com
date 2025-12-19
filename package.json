@@ -1,0 +1,17 @@
+{
+  "name": "atomic-mint-ui",
+  "version": "1.0.0",
+  "description": "Bitcoin Season 3 GOAT Mint UI",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "start": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "bitcoin",
+    "rgb",
+    "mint",
+    "goat"
+  ],
+  "author": "",
+  "license": "ISC"
+}
