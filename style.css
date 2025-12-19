@@ -1085,19 +1085,27 @@ body.dual-page-mode {
     border: 1px solid rgba(251, 191, 36, 0.2);
 }
 
-/* Design Switcher - Static Bottom */
+/* Design Switcher - Pinned Bottom Right */
 .design-switcher {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
     display: flex;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
     padding: 6px;
     border-radius: 100px;
-    border: 1px solid rgba(251, 191, 36, 0.1);
-    width: fit-content;
-    margin: 6rem auto 2rem;
-    position: relative;
-    z-index: 10;
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(251, 191, 36, 0.05);
+    z-index: 10001;
+    /* Above floating CTA */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.design-switcher:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(251, 191, 36, 0.1);
+    border-color: rgba(251, 191, 36, 0.4);
 }
 
 .design-switcher a {
