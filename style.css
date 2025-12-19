@@ -1039,6 +1039,12 @@ body.dual-page-mode {
     margin-top: 0.5rem;
 }
 
+.mint-btn.whitelist-btn {
+    background: var(--btn-disabled);
+    color: var(--btn-disabled-text);
+    cursor: pointer;
+}
+
 .mint-btn.highlighted {
     background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
     color: #000;

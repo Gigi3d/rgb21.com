@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Atomic Mint button clicks
-    const mintButtons = document.querySelectorAll('.mint-btn:not(.disabled), .floating-mint-cta');
+    const mintButtons = document.querySelectorAll('.mint-btn:not(.disabled), .whitelist-btn, .floating-mint-cta');
 
     const showSuccessModal = () => {
         const modal = document.getElementById('success-modal');
