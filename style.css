@@ -1040,9 +1040,16 @@ body.dual-page-mode {
 }
 
 .mint-btn.whitelist-btn {
-    background: var(--btn-disabled);
-    color: var(--btn-disabled-text);
+    background: #ffffff;
+    color: #000000;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.mint-btn.whitelist-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
 }
 
 .mint-btn.highlighted {
