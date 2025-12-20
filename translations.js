@@ -81,6 +81,8 @@ const translations = {
             <p>Based in Switzerland, this non-profit organization is dedicated to accelerating the development, coordination, and global adoption of the RGB technology, marking its launch alongside the <span class='highlight'>RGB v0.11</span> milestone.</p>\
             <p class='footer-note'>Read the full announcement on <a href='https://www.nasdaq.com/articles/rgb-v0111-launches-allowing-creation-digital-assets-bitcoin-mainnet' target='_blank'>Nasdaq</a>.</p>\
         </div>",
+        faq_q12: "1 Click Atomic Mint",
+        faq_a12: "<div class='faq-rich-content'><p>Combining <span class='highlight'>RGB smart contracts</span> and Bitcoin’s <span class='highlight'>PSBT</span>, users get to enjoy scriptless atomic swap protocol by <strong>BitMask</strong>. Once an asset is listed, the user can buy, without any 3rd party.</p></div>",
         how_to_mint_title: "How to Mint GOAT",
         how_to_mint_step1_title: "1. Setup",
         how_to_mint_step1_text: "Create an account on diba.io and install the BitMask extension.",
