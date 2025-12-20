@@ -85,7 +85,7 @@ const translations = {
         faq_a12: "<div class='faq-rich-content'><p>Combining <span class='highlight'>RGB smart contracts</span> and Bitcoin’s <span class='highlight'>PSBT</span>, users get to enjoy scriptless atomic swap protocol by <strong>BitMask</strong>. Once an asset is listed, the user can buy, without any 3rd party.</p></div>",
         how_to_mint_title: "How to Mint GOAT",
         how_to_mint_step1_title: "1. Setup",
-        how_to_mint_step1_text: "1. Create an account on <a href='https://diba.io' target='_blank'>diba.io</a>  and make sure you have installed the <a href='https://chromewebstore.google.com/detail/bitmask/momakdpclmaphlamgjcndbgfckjfpemp?pli=1' target='_blank'>BitMask wallet extension</a>",
+        how_to_mint_step1_text: "<ul><li>Create an account on <a href='https://diba.io' target='_blank'>diba.io</a>  and make sure you have installed the <a href='https://chromewebstore.google.com/detail/bitmask/momakdpclmaphlamgjcndbgfckjfpemp?pli=1' target='_blank'>BitMask wallet extension</a></li></ul>",
         how_to_mint_step2_title: "2. Preparation",
         how_to_mint_step2_list: "<li>Add BTC to your BitMask non-custodial wallet.</li><li>Navigate to the Token tab and fund your RGB vault. This prepares your wallet to handle RGB transactions</li><li>Connect your wallet to diba.io.</li>",
         how_to_mint_step3_title: "3. Mint",
