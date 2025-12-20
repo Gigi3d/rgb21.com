@@ -26,7 +26,7 @@ const translations = {
         pill_space: "Space",
         // Nakamoto Specific
         nakamoto_subtitle: "THE GENESIS BLUEPRINT ~ WHERE THE BITCOIN ODYSSEY BEGAN",
-        nakamoto_desc: "A phantom of the golden night, Nakamoto GOAT lights up at the massive potential of Bitcoin Season 3. A rare collection for Bitcoin legends, and RGB heroes.",
+        nakamoto_desc: "A phantom of the golden night, Nakamoto GOAT lights up at the massive potential of Bitcoin Season 3.<br>A rare collection for Bitcoin legends, and RGB heroes.",
         nakamoto_mint_title: "Elite Mint",
         // Space Specific
         space_subtitle: "THE FINAL FRONTIER ~ REACHING NEW HEIGHTS IN THE MINTVERSE",
