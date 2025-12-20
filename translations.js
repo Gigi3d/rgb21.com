@@ -94,7 +94,7 @@ const translations = {
         why_step2_title: "Early Special Access",
         why_step2_text: "Holders will have special access, benefits and passes to certain events. i.e they could be able to redeem $BET in pre-TGE period.",
         why_step3_title: "The Bitcoin GOAT Status",
-        why_step3_text: "Be the earliest to hold an RGB asset. Hold GOAT and build to the moon as $USDT issuance is expected on Bitcoin via RGB in early 2026.",
+        why_step3_text: "Be the honorary holder of the first RGB21 onchain collectible, right before $USDT stablecoin is issued on Bitcoin via RGB in 2026",
     },
     zh: {
         nav_goddess: "女神测试",
