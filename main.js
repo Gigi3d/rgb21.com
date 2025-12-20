@@ -73,8 +73,16 @@ const translations = {
             </div>\
             <p class='footer-note'>Ensure you have sufficient BTC for a successful mint.</p>\
         </div>",
-        faq_q7: "GOAT collection",
-        faq_a7: "<div class='faq-rich-content'><p>A limited series of digital guardians representing the <span class='highlight'>strength and spirit</span> of the Bitcoin ecosystem.</p></div>",
+        faq_q7: "GOAT narrative",
+        faq_a7: "<div class='faq-rich-content'>\
+            <p>The GOAT collection is a story of the Bitcoin Movement, bringing to light critical events in Bitcoin history since genesis. The 11K collection is broken down into 2 distinct power groups:</p>\
+            <ul>\
+                <li><span class='highlight'>Space GOATs - 10k</span></li>\
+                <li><span class='highlight'>Nakamoto GOATs - 1k</span></li>\
+            </ul>\
+            <p>Every culture has its ten trials. Lü Dongbin faced ten tests before earning inner alchemy and immortality. Mirroring the Exodus story, we created memetic writings into the GOAT collection's narrative, like \"Satoshi's burning bush\". The 10k Space GOATs, each with 1K sub-collection.</p>\
+            <p><span class='highlight'>Nakamoto</span> are the elite GOATs. Symbolizing the promised future of <span class='highlight'>Bitcoin Season 3</span>. The holders are elites of this special cause.</p>\
+        </div>",
         faq_q8: "The artist",
         faq_a8: "<div class='faq-rich-content'>\
             <p><span class='highlight'>TILLAVISION</span> (Matt Penttila) is a legendary digital artist, producer & NFT pioneer who’s worked with icons like Kanye West, 50 Cent, Nas, DJ Khaled, Drake, Cardi B, Megan Thee Stallion, Pop Smoke & Juice WRLD.</p>\
