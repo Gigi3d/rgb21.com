@@ -80,6 +80,12 @@ const translations = {
         faq_a9: "<div class='faq-rich-content'><p>Financial applications built directly on Bitcoin's base layer and <span class='highlight'>Lightning Network</span>, ensuring maximum security and privacy.</p></div>",
         faq_q10: "Bitmask wallet",
         faq_a10: "<div class='faq-rich-content'><p>Your portal to the RGB ecosystem. A secure browser extension for managing Bitcoin, Lightning, and <span class='highlight'>RGB assets</span>.</p></div>",
+        faq_q11: "RGB Association",
+        faq_a11: "<div class='faq-rich-content'>\
+            <p>The <span class='highlight'>RGB Protocol Association</span> was officially announced on July 14, 2024, as a collaborative effort by key players in the ecosystem, including <strong>Bitfinex</strong>, <strong>Fulgur Ventures</strong>, <strong>Bitmask by DIBA</strong>, <strong>Plan B Network</strong>, and others.</p>\
+            <p>Based in Switzerland, this non-profit organization is dedicated to accelerating the development, coordination, and global adoption of the RGB technology, marking its launch alongside the <span class='highlight'>RGB v0.11</span> milestone.</p>\
+            <p class='footer-note'>Read the full announcement on <a href='https://www.nasdaq.com/articles/rgb-v0111-launches-allowing-creation-digital-assets-bitcoin-mainnet' target='_blank'>Nasdaq</a>.</p>\
+        </div>",
     },
     zh: {
         nav_goddess: "女神测试",
@@ -162,6 +168,12 @@ const translations = {
         faq_a9: "<div class='faq-rich-content'><p>直接构建在比特币基础层和 <span class='highlight'>闪电网络</span> 上的金融应用，确保最高水平的安全性和隐私性。</p></div>",
         faq_q10: "Bitmask 钱包",
         faq_a10: "<div class='faq-rich-content'><p>您通往 RGB 生态系统的门户。一个用于管理比特币、闪电网络和 <span class='highlight'>RGB 资产</span> 的安全浏览器扩展。</p></div>",
+        faq_q11: "RGB 协会",
+        faq_a11: "<div class='faq-rich-content'>\
+            <p><span class='highlight'>RGB 协议协会</span> 于 2024 年 7 月 14 日正式宣布成立，这是由生态系统中的关键成员共同发起的，包括 <strong>Bitfinex</strong>、<strong>Fulgur Ventures</strong>、<strong>Bitmask by DIBA</strong>、<strong>Plan B Network</strong> 等。</p>\
+            <p>该非营利组织总部位于瑞士，致力于加速 RGB 技术的开发、协调和全球采用，并在 <span class='highlight'>RGB v0.11</span> 里程碑发布之际宣布成立。</p>\
+            <p class='footer-note'>在 <a href='https://www.nasdaq.com/articles/rgb-v0111-launches-allowing-creation-digital-assets-bitcoin-mainnet' target='_blank'>Nasdaq</a> 上阅读完整公告。</p>\
+        </div>",
     }
 };
 
