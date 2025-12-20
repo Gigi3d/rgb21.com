@@ -29,7 +29,7 @@ const translations = {
         nakamoto_desc: "A phantom of the golden night, Nakamoto GOAT lights up at the massive potential of Bitcoin Season 3.<br>A rare collection for Bitcoin legends, and RGB heroes.",
         nakamoto_mint_title: "Elite Mint",
         // Space Specific
-        space_subtitle: "THE FINAL FRONTIER ~ REACHING NEW HEIGHTS IN THE MINTVERSE",
+        space_subtitle: "THE FINAL FRONTIER ~ REACHING NEW HEIGHTS",
         space_desc: "Leading the charge for mass adoption, Space GOATs spread the power of Bitcoin smart contracts to the infinite ends of the cosmos.",
         space_mint_title: "Open mint",
         space_wl_title: "OG Whitelist 🔒",
