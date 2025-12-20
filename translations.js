@@ -11,9 +11,9 @@ const translations = {
         stability: "Mint Progress",
         progress: "Mint Progress",
         faq_title: "Frequently Asked Questions",
-        feature_banner_title: "Bitcoin Season 3<br>GOAT",
-        feature_banner_text: "The GOATs are arriving. Powered by Bitmask and DIBA, we are ushering in a new era of RGB Inscriptions.",
-        feature_banner_subtext: "Join the revolution of client-side validated digital artifacts.",
+        feature_banner_title: "Bitcoin<br>Season&nbsp;3<br>GOAT",
+        feature_banner_text: "The dawn of Bitcoin Season 3 is here, marking a cosmic shift in the digital artifact landscape. Powered by the unmatched security of Bitmask and the visionary marketplace of DIBA, we are ushering in a golden age of RGB Inscriptions that redefine ownership on the most robust network ever created.",
+        feature_banner_subtext: "Step into the revolution of client-side validated digital artifacts, where every pixel is secured by Bitcoin's hash power and every soul-bond is eternal. Join a community of pioneers claiming their stake in the stars, as we push the boundaries of what's possible in the decentralized frontier.",
         pill_label: "SUMMON:",
         standard: "Standard",
         classic: "Classic",
@@ -39,25 +39,54 @@ const translations = {
         free_mint: "FREE MINT",
         // FAQ items
         faq_q1: "Bitcoin Season 3 -- RGB",
-        faq_a1: "The next evolution of Bitcoin, enabling smart contracts and scalable assets directly on the world's most secure network via the RGB protocol.",
+        faq_a1: "<div class='faq-rich-content'><p>The next evolution of Bitcoin, enabling <span class='highlight'>smart contracts</span> and scalable assets directly on the world's most secure network via the <span class='highlight'>RGB protocol</span>.</p></div>",
         faq_q2: "USDT and GOAT",
-        faq_a2: "GOAT collectibles live on the RGB protocol, which also supports Tether (USDT), allowing for seamless integration for minting and trading.",
+        faq_a2: "<div class='faq-rich-content'><p>GOAT collectibles live on the RGB protocol, which also supports <span class='highlight'>Tether (USDT)</span>, allowing for seamless integration for minting and trading.</p></div>",
         faq_q3: "RGB Inscriptions",
-        faq_a3: "RGB Inscriptions are client-side validated smart contracts on Bitcoin, allowing for scalable and private digital assets.",
+        faq_a3: "<div class='faq-rich-content'><p>RGB Inscriptions are <span class='highlight'>client-side validated</span> smart contracts on Bitcoin, allowing for scalable and private digital assets.</p></div>",
         faq_q4: "$Bet and GOAT",
-        faq_a4: "$Bet introduces a new layer of utility for GOAT holders, enabling participation in decentralized prediction markets directly on the Bitcoin network via RGB.",
+        faq_a4: "<div class='faq-rich-content'><p>$Bet introduces a new layer of utility for GOAT holders, enabling participation in decentralized <span class='highlight'>prediction markets</span> directly on the Bitcoin network via RGB.</p></div>",
         faq_q5: "Secondary market - DIBA",
-        faq_a5: "Discover and trade your GOATs on DIBA, the first marketplace for Bitcoin-native RGB assets.",
-        faq_q6: "How to mint",
-        faq_a6: "Connect your Bitmask wallet, select your guardian, and click 'Summon'. Ensure you have sufficient USDT/BTC on the RGB network.",
+        faq_a5: "<div class='faq-rich-content'><p>Discover and trade your GOATs on <a href='https://diba.io' target='_blank'>DIBA</a>, the first marketplace for <span class='highlight'>Bitcoin-native</span> RGB assets.</p></div>",
+        faq_q6: "How to Mint GOAT",
+        faq_a6: "<div class='faq-rich-content'>\
+            <div class='step'>\
+                <span class='step-num'>1</span>\
+                <p>Create an account on <a href='http://diba.io' target='_blank'>diba.io</a> and install the <strong>BitMask</strong> extension.</p>\
+            </div>\
+            <div class='step'>\
+                <span class='step-num'>2</span>\
+                <p>Prepare the wallet:</p>\
+                <ul>\
+                    <li>Add BTC to your BitMask non-custodial wallet.</li>\
+                    <li>Fund your <strong>RGB vault</strong> to handle transactions.</li>\
+                    <li>Connect your wallet to <a href='http://diba.io' target='_blank'>diba.io</a>.</li>\
+                </ul>\
+            </div>\
+            <div class='step'>\
+                <span class='step-num'>3</span>\
+                <p>Mint:</p>\
+                <ul>\
+                    <li>On the mint day, click <strong>'Summon'</strong> and await mempool confirmation.</li>\
+                </ul>\
+            </div>\
+            <p class='footer-note'>Ensure you have sufficient BTC for a successful mint.</p>\
+        </div>",
         faq_q7: "GOAT collection",
-        faq_a7: "A limited series of digital guardians representing the strength and spirit of the Bitcoin ecosystem.",
+        faq_a7: "<div class='faq-rich-content'><p>A limited series of digital guardians representing the <span class='highlight'>strength and spirit</span> of the Bitcoin ecosystem.</p></div>",
         faq_q8: "The artist",
-        faq_a8: "Crafted by visionary designers dedicated to modern Bitcoin aesthetics and \"Bitcoin Native\" culture.",
+        faq_a8: "<div class='faq-rich-content'><p>Crafted by visionary designers dedicated to modern Bitcoin aesthetics and <span class='highlight'>\"Bitcoin Native\"</span> culture.</p></div>",
         faq_q9: "Bitcoin Native Finance",
-        faq_a9: "Financial applications built directly on Bitcoin's base layer and Lightning Network, ensuring maximum security and privacy.",
+        faq_a9: "<div class='faq-rich-content'><p>Financial applications built directly on Bitcoin's base layer and <span class='highlight'>Lightning Network</span>, ensuring maximum security and privacy.</p></div>",
         faq_q10: "Bitmask wallet",
-        faq_a10: "Your portal to the RGB ecosystem. A secure browser extension for managing Bitcoin, Lightning, and RGB assets."
+        faq_a10: "<div class='faq-rich-content'><p>Your portal to the RGB ecosystem. A secure browser extension for managing Bitcoin, Lightning, and <span class='highlight'>RGB assets</span>.</p></div>",
+        market_title: "Secondary Market p2p trading",
+        market_f1_title: "List UDA",
+        market_f1_desc: "The user who atomically minted can decide to list his UDA for sale using the atomic swap code in the backend.",
+        market_f2_title: "Buy UDA (p2p)",
+        market_f2_desc: "ONLY another user can buy the listed asset. The user must have completed part A, with one click he buys the UDA.",
+        market_f3_title: "Sale Confirmation",
+        market_f3_desc: "The UDA disappears from the seller's wallet and the seller receives the BTC that was offered. The UDA appears in the buyer's wallet, BTC is deducted + fees, and mempool confirmation occurs. Track history on the asset page.",
     },
     zh: {
         nav_goddess: "女神测试",
@@ -99,25 +128,54 @@ const translations = {
         free_mint: "免费铸造",
         // FAQ items
         faq_q1: "比特币第三季 -- RGB",
-        faq_a1: "比特币的下一次进化，通过 RGB 协议在世界上最安全的网络上直接实现智能合约和可扩展资产。",
+        faq_a1: "<div class='faq-rich-content'><p>比特币的下一次进化，通过 <span class='highlight'>RGB 协议</span>在世界上最安全的网络上直接实现智能合约和可扩展资产。</p></div>",
         faq_q2: "USDT 与 GOAT",
-        faq_a2: "GOAT 收藏品运行在 RGB 协议上，该协议也支持泰达币 (USDT)，从而实现铸造和交易的无缝集成。",
+        faq_a2: "<div class='faq-rich-content'><p>GOAT 收藏品运行在 RGB 协议上，该协议也支持 <span class='highlight'>泰达币 (USDT)</span>，从而实现铸造和交易的无缝集成。</p></div>",
         faq_q3: "RGB 铭文",
-        faq_a3: "RGB 铭文是比特币上经过客户端验证的智能合约，支持可扩展且私密的数字资产。",
+        faq_a3: "<div class='faq-rich-content'><p>RGB 铭文是比特币上经过 <span class='highlight'>客户端验证</span> 的智能合约，支持可扩展且私密的数字资产。</p></div>",
         faq_q4: "$Bet 与 GOAT",
-        faq_a4: "$Bet 为 GOAT 持有者引入了新的实用层，支持通过 RGB 直接在比特币网络上参与去中心化预测市场。",
+        faq_a4: "<div class='faq-rich-content'><p>$Bet 为 GOAT 持有者引入了新的实用层，支持通过 RGB 直接在比特币网络上参与去中心化 <span class='highlight'>预测市场</span>。</p></div>",
         faq_q5: "二级市场 - DIBA",
-        faq_a5: "在 DIBA 上发现并交易您的 GOAT，这是第一个比特币原生的 RGB 资产市场。",
-        faq_q6: "如何铸造",
-        faq_a6: "连接您的 Bitmask 钱包，选择您的守护者，然后点击“召唤”。请确保您的 RGB 网络上有足够的 USDT/BTC。",
+        faq_a5: "<div class='faq-rich-content'><p>在 <a href='https://diba.io' target='_blank'>DIBA</a> 上发现并交易您的 GOAT，这是第一个 <span class='highlight'>比特币原生</span> 的 RGB 资产市场。</p></div>",
+        faq_q6: "如何铸造 GOAT",
+        faq_a6: "<div class='faq-rich-content'>\
+            <div class='step'>\
+                <span class='step-num'>1</span>\
+                <p>在 <a href='http://diba.io' target='_blank'>diba.io</a> 上创建账户，并确保已安装 <strong>BitMask</strong> 钱包扩展。</p>\
+            </div>\
+            <div class='step'>\
+                <span class='step-num'>2</span>\
+                <p>准备钱包：</p>\
+                <ul>\
+                    <li>向您的 BitMask 非托管钱包添加 BTC。</li>\
+                    <li>注资您的 <strong>RGB 保险库</strong>（为处理 RGB 交易做好准备）。</li>\
+                    <li>将您的钱包连接到 <a href='http://diba.io' target='_blank'>diba.io</a>。</li>\
+                </ul>\
+            </div>\
+            <div class='step'>\
+                <span class='step-num'>3</span>\
+                <p>铸造：</p>\
+                <ul>\
+                    <li>在铸造当天，点击 <strong>“召唤” (Summon)</strong> 并等待内存池确认。</li>\
+                </ul>\
+            </div>\
+            <p class='footer-note'>请确保您有足够的 BTC 以确保成功铸造。</p>\
+        </div>",
         faq_q7: "GOAT 系列",
-        faq_a7: "一系列限量的数字守护者，代表了比特币生态系统的力量和精神。",
+        faq_a7: "<div class='faq-rich-content'><p>一系列限量的数字守护者，代表了比特币生态系统的 <span class='highlight'>力量和精神</span>。</p></div>",
         faq_q8: "艺术家",
-        faq_a8: "由致力于现代比特币美学和“比特币原生”文化的富有远见的设计师精心打造。",
+        faq_a8: "<div class='faq-rich-content'><p>由致力于现代比特币美学和 <span class='highlight'>“比特币原生”</span> 文化的富有远见的设计师精心打造。</p></div>",
         faq_q9: "比特币原生金融",
-        faq_a9: "直接构建在比特币基础层和闪电网络上的金融应用，确保最高水平的安全性和隐私性。",
+        faq_a9: "<div class='faq-rich-content'><p>直接构建在比特币基础层和 <span class='highlight'>闪电网络</span> 上的金融应用，确保最高水平的安全性和隐私性。</p></div>",
         faq_q10: "Bitmask 钱包",
-        faq_a10: "您通往 RGB 生态系统的门户。一个用于管理比特币、闪电网络和 RGB 资产的安全浏览器扩展。"
+        faq_a10: "<div class='faq-rich-content'><p>您通往 RGB 生态系统的门户。一个用于管理比特币、闪电网络和 <span class='highlight'>RGB 资产</span> 的安全浏览器扩展。</p></div>",
+        market_title: "二级市场 P2P 交易",
+        market_f1_title: "挂单 UDA",
+        market_f1_desc: "已完成原子铸造的用户可以决定使用后端的原子交换代码挂单出售其 UDA。",
+        market_f2_title: "购买 UDA (P2P)",
+        market_f2_desc: "只有另一个用户可以购买列出的资产。用户必须完成 A 部分，点击一下即可购买 UDA。",
+        market_f3_title: "销售确认",
+        market_f3_desc: "UDA 从卖方钱包中消失，卖方收到收到的 BTC。UDA 出现在买方钱包中，扣除 BTC + 手续费，并进行内存池确认。在资产页面跟踪历史记录。",
     }
 };
 
