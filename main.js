@@ -40,18 +40,18 @@ const translations = {
         goddess_mint_title: "Infrastructure test",
         free_mint: "FREE MINT",
         // FAQ items
-        faq_q1: "Bitcoin Season 3 -- RGB",
+        faq_q1: "What is Bitcoin Season 3 and RGB?",
         faq_a1: "<div class='faq-rich-content'><p>The next evolution of Bitcoin, enabling <span class='highlight'>smart contracts</span> and scalable assets directly on the world's most secure network via the <span class='highlight'>RGB protocol</span>.</p></div>",
-        faq_q2: "USDT and GOAT",
+        faq_q2: "How does USDT relate to GOAT collectibles?",
         faq_a2: "<div class='faq-rich-content'><p>GOAT collectibles live on the RGB protocol, which also supports <span class='highlight'>Tether (USDT)</span>, allowing for seamless integration for minting and trading.</p></div>",
         faq_q3: "Is it possible to inscribe RGB21?",
         faq_a3: "<div class='faq-rich-content'><p>In the future, GOAT holders can inscribe the <span class='highlight'>RGB21 thumbnail</span> directly on chain. This references the off chain asset while keeping a minimal footprint on the blockchain. It is a cheap and long lasting way to secure your legacy.</p></div>",
-        faq_q4: "$Bet and GOAT",
+        faq_q4: "What is $Bet and how does it work with GOAT?",
         faq_a4: "<div class='faq-rich-content'><p>$Bet introduces a new layer of utility for GOAT holders, enabling participation in decentralized <span class='highlight'>prediction markets</span> directly on the Bitcoin network via RGB.</p></div>",
-        faq_q5: "Secondary market - DIBA",
+        faq_q5: "Where can I trade GOAT on the secondary market?",
         faq_a5: "<div class='faq-rich-content'><p>Discover and trade your GOATs on <a href='https://diba.io' target='_blank'>DIBA</a>, the first marketplace for <span class='highlight'>Bitcoin-native</span> RGB assets.</p></div>",
 
-        faq_q7: "GOAT narrative",
+        faq_q7: "What is the story behind the GOAT collection?",
         faq_a7: "<div class='faq-rich-content'>\
             <p>The GOAT collection is a story of the Bitcoin Movement, bringing to light critical events in Bitcoin history since genesis. The 11K collection is broken down into 2 distinct power groups:</p>\
             <ul>\
@@ -61,30 +61,30 @@ const translations = {
             <p>Every culture has its ten trials. Lü Dongbin faced ten tests before earning inner alchemy and immortality. Mirroring the Exodus story, we created memetic writings into the GOAT collection's narrative, like \"Satoshi's burning bush\". The 10k Space GOATs, each with 1K sub-collection.</p>\
             <p><span class='highlight'>Nakamoto</span> are the elite GOATs. Symbolizing the promised future of <span class='highlight'>Bitcoin Season 3</span>. The holders are elites of this special cause.</p>\
         </div>",
-        faq_q8: "The artist",
+        faq_q8: "Who is the artist behind GOAT?",
         faq_a8: "<div class='faq-rich-content'>\
             <p><span class='highlight'>TILLAVISION</span> (Matt Penttila) is a legendary digital artist, producer & NFT pioneer who’s worked with icons like Kanye West, 50 Cent, Nas, DJ Khaled, Drake, Cardi B, Megan Thee Stallion, Pop Smoke & Juice WRLD.</p>\
             <p>As part of <strong>The Kickdrums</strong> he earned major hip-hop credits, and in Web3 he built virtual worlds for Death Row Records and debuted <span class='highlight'>Lil Bitcoin</span>.</p>\
             <p>Tilla is a creative portal redefining art, music & crypto culture.</p>\
         </div>",
-        faq_q9: "Bitcoin Native Finance",
+        faq_q9: "What is Bitcoin Native Finance?",
         faq_a9: "<div class='faq-rich-content'><p>Capital markets and complex financial instruments are migrating to the <span class='highlight'>Bitcoin Standard</span>. This shift enables globally accessible and instant settlements, saving billions typically lost to global asset reconciliation.</p></div>",
-        faq_q10: "Bitmask wallet",
+        faq_q10: "What is the Bitmask wallet?",
         faq_a10: "<div class='faq-rich-content'>\
             <p><strong>BitMask</strong> is a Bitcoin-native wallet and developer stack for <span class='highlight'>client-side validated assets</span> and smart contracts — RGB, enabling non-custodial issuance, trading, and settlement directly on Bitcoin.</p>\
             <p>BitMask is the flagship product of <strong>DIBA</strong>, a Bitcoin infrastructure company, backed by seasoned Bitcoin and institutional investors such as Draper Associates, Martial Eagle, Waterdrip Capital, ACTAI Ventures, among others.</p>\
             <p><strong>BitMask is Your Swiss Army Knife for Bitcoin Native Finance</strong></p>\
             <p class='footer-note'>Get it now: <a href='https://chromewebstore.google.com/detail/bitmask/momakdpclmaphlamgjcndbgfckjfpemp?pli=1' target='_blank'>Chrome Web Store</a></p>\
         </div>",
-        faq_q11: "RGB Association",
+        faq_q11: "What is the RGB Association?",
         faq_a11: "<div class='faq-rich-content'>\
             <p>The <span class='highlight'>RGB Protocol Association</span> was officially announced on July 14, 2024, as a collaborative effort by key players in the ecosystem, including <strong>Bitfinex</strong>, <strong>Fulgur Ventures</strong>, <strong>Bitmask by DIBA</strong>, <strong>Plan B Network</strong>, and others.</p>\
             <p>Based in Switzerland, this non-profit organization is dedicated to accelerating the development, coordination, and global adoption of the RGB technology, marking its launch alongside the <span class='highlight'>RGB v0.11</span> milestone.</p>\
             <p class='footer-note'>Read the full announcement on <a href='https://www.nasdaq.com/articles/rgb-v0111-launches-allowing-creation-digital-assets-bitcoin-mainnet' target='_blank'>Nasdaq</a>.</p>\
         </div>",
-        faq_q12: "1 Click Atomic Mint",
+        faq_q12: "How does 1 Click Atomic Mint work?",
         faq_a12: "<div class='faq-rich-content'><p>Combining <span class='highlight'>RGB smart contracts</span> and Bitcoin’s <span class='highlight'>PSBT</span>, users get to enjoy scriptless atomic swap protocol by <strong>BitMask</strong>. Once an asset is listed, the user can buy, without any 3rd party.</p></div>",
-        faq_q13: "Why there is a floor price for OG whitelist",
+        faq_q13: "Why does the OG whitelist have a $21 floor price?",
         faq_a13: "<div class='faq-rich-content'><p>The <span class='highlight'>$21 floor price</span> helps minimize bot activity and ensures a pure market signal. We reward the <span class='highlight'>OG whitelist</span> with an entry price more than 3 times lower than the open mint for being early supporters of BitMask and RGB development.</p></div>",
         how_to_mint_title: "How to Mint GOAT",
         how_to_mint_step1_title: "1. Setup",
