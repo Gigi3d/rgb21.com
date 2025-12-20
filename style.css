@@ -37,7 +37,8 @@ body {
     height: 100vh;
     background: #000;
     z-index: 9999;
-    display: flex;
+    display: none;
+    /* Hidden by default - no splash screen */
     justify-content: center;
     align-items: center;
     transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
