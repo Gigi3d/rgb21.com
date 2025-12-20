@@ -1734,6 +1734,87 @@ body.dual-page-mode {
 }
 
 
+/* WHY GOAT Section */
+.why-goat-section {
+    padding: 6rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.why-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    text-align: left;
+    margin-bottom: 4rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #fff, #fbbf24);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.why-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.why-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.why-card-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.why-card-text {
+    font-size: 1rem;
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .why-card {
+        text-align: center;
+    }
+}
+
 /* How to Mint Section */
 .how-to-section {
     padding: 6rem 1.5rem;

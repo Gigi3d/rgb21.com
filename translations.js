@@ -94,6 +94,13 @@ const translations = {
         how_to_mint_step2_list: "<li>Add BTC to your BitMask non-custodial wallet.</li><li>Fund your RGB vault to handle transactions.</li><li>Connect your wallet to diba.io.</li>",
         how_to_mint_step3_title: "3. Mint",
         how_to_mint_step3_list: "<li>On the mint day, click 'Summon' and await mempool confirmation.</li><li>Ensure you have sufficient BTC for a successful mint.</li>",
+        why_goat_title: "WHY GOAT",
+        why_step1_title: "Redeemable",
+        why_step1_text: "Holders will be able to swap GOAT (non-fungible) for $BET (fungible token). $BET is the BitMask Ecosystem Token.",
+        why_step2_title: "Early Special Access",
+        why_step2_text: "Holders will have special access, benefits and passes to certain events. i.e they could be able to redeem $BET in pre-TGE period.",
+        why_step3_title: "The Bitcoin GOAT Status",
+        why_step3_text: "Be the earliest to hold an RGB asset. Hold GOAT and build to the moon as $USDT issuance is expected on Bitcoin via RGB in early 2026.",
     },
     zh: {
         nav_goddess: "女神测试",
@@ -190,6 +197,13 @@ const translations = {
         how_to_mint_step2_list: "<li>向您的 BitMask 非托管钱包添加 BTC。</li><li>注资您的 RGB 保险库以处理交易。</li><li>将您的钱包连接到 diba.io。</li>",
         how_to_mint_step3_title: "3. 铸造",
         how_to_mint_step3_list: "<li>在铸造当天，点击“召唤”并等待内存池确认。</li><li>确保您有足够的 BTC 以成功铸造。</li>",
+        why_goat_title: "为什么要选择 GOAT",
+        why_step1_title: "可兑换",
+        why_step1_text: "持有者将能够将 GOAT（非同质化代币）兑换为 $BET（同质化代币）。$BET 是 BitMask 生态系统代币。",
+        why_step2_title: "早期特别访问权限",
+        why_step2_text: "持有者将获得特别访问权限、福利和特定活动的通行证。例如，他们可能能够在 TGE（代币生成事件）之前的时期兑换 $BET。",
+        why_step3_title: "比特币 GOAT 地位",
+        why_step3_text: "成为最早持有 RGB 资产的人。持有 GOAT 并共同建设，因为预计 2026 年初将通过 RGB 在比特币上发行 $USDT。",
     }
 };
 
