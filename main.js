@@ -407,13 +407,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     startCountdown('space-goat-timer', 'January 12, 2026 00:00:00');
-    startCountdown('space-goat-timer-classic', 'January 21, 2025 00:00:00');
-    startCountdown('space-goat-wl-timer', 'January 21, 2025 00:00:00');
-    startCountdown('space-goat-wl-timer-classic', 'January 21, 2025 00:00:00');
-    startCountdown('nakamoto-timer', 'January 21, 2025 00:00:00');
-    startCountdown('nakamoto-timer-classic', 'January 21, 2025 00:00:00');
-    startCountdown('goddess-timer', 'January 12, 2025 00:00:00');
-    startCountdown('goddess-timer-classic', 'January 12, 2025 00:00:00');
+    startCountdown('space-goat-timer-classic', 'January 12, 2026 00:00:00');
+    startCountdown('space-goat-wl-timer', 'January 12, 2026 00:00:00');
+    startCountdown('space-goat-wl-timer-classic', 'January 12, 2026 00:00:00');
+    startCountdown('nakamoto-timer', 'January 12, 2026 00:00:00');
+    startCountdown('nakamoto-timer-classic', 'January 12, 2026 00:00:00');
+    startCountdown('goddess-timer', 'January 6, 2026 00:00:00');
+    startCountdown('goddess-timer-classic', 'January 6, 2026 00:00:00');
 
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
