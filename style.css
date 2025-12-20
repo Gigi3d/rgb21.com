@@ -137,7 +137,10 @@ body {
     bottom: 0;
     width: 200%;
     height: 200%;
+    width: 200%;
+    height: 200%;
     background: transparent;
+    will-change: transform;
 }
 
 #stars {

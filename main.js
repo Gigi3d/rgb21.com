@@ -80,7 +80,12 @@ const translations = {
         faq_q9: "Bitcoin Native Finance",
         faq_a9: "<div class='faq-rich-content'><p>Financial applications built directly on Bitcoin's base layer and <span class='highlight'>Lightning Network</span>, ensuring maximum security and privacy.</p></div>",
         faq_q10: "Bitmask wallet",
-        faq_a10: "<div class='faq-rich-content'><p>Your portal to the RGB ecosystem. A secure browser extension for managing Bitcoin, Lightning, and <span class='highlight'>RGB assets</span>.</p></div>",
+        faq_a10: "<div class='faq-rich-content'>\
+            <p><strong>BitMask</strong> is a Bitcoin-native wallet and developer stack for <span class='highlight'>client-side validated assets</span> and smart contracts — RGB, enabling non-custodial issuance, trading, and settlement directly on Bitcoin.</p>\
+            <p>BitMask is the flagship product of <strong>DIBA</strong>, a Bitcoin infrastructure company, backed by seasoned Bitcoin and institutional investors such as Draper Associates, Martial Eagle, Waterdrip Capital, ACTAI Ventures, among others.</p>\
+            <p><strong>BitMask is Your Swiss Army Knife for Bitcoin Native Finance</strong></p>\
+            <p class='footer-note'>Get it now: <a href='https://chromewebstore.google.com/detail/bitmask/momakdpclmaphlamgjcndbgfckjfpemp?pli=1' target='_blank'>Chrome Web Store</a></p>\
+        </div>",
         faq_q11: "RGB Association",
         faq_a11: "<div class='faq-rich-content'>\
             <p>The <span class='highlight'>RGB Protocol Association</span> was officially announced on July 14, 2024, as a collaborative effort by key players in the ecosystem, including <strong>Bitfinex</strong>, <strong>Fulgur Ventures</strong>, <strong>Bitmask by DIBA</strong>, <strong>Plan B Network</strong>, and others.</p>\
