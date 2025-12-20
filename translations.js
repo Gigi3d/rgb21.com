@@ -76,7 +76,11 @@ const translations = {
         faq_q7: "GOAT collection",
         faq_a7: "<div class='faq-rich-content'><p>A limited series of digital guardians representing the <span class='highlight'>strength and spirit</span> of the Bitcoin ecosystem.</p></div>",
         faq_q8: "The artist",
-        faq_a8: "<div class='faq-rich-content'><p>Crafted by visionary designers dedicated to modern Bitcoin aesthetics and <span class='highlight'>\"Bitcoin Native\"</span> culture.</p></div>",
+        faq_a8: "<div class='faq-rich-content'>\
+            <p><span class='highlight'>TILLAVISION</span> (Matt Penttila) is a legendary digital artist, producer & NFT pioneer who’s worked with icons like Kanye West, 50 Cent, Nas, DJ Khaled, Drake, Cardi B, Megan Thee Stallion, Pop Smoke & Juice WRLD.</p>\
+            <p>As part of <strong>The Kickdrums</strong> he earned major hip-hop credits, and in Web3 he built virtual worlds for Death Row Records and debuted <span class='highlight'>Lil Bitcoin</span>.</p>\
+            <p>Tilla is a creative portal redefining art, music & crypto culture.</p>\
+        </div>",
         faq_q9: "Bitcoin Native Finance",
         faq_a9: "<div class='faq-rich-content'><p>Financial applications built directly on Bitcoin's base layer and <span class='highlight'>Lightning Network</span>, ensuring maximum security and privacy.</p></div>",
         faq_q10: "Bitmask wallet",
