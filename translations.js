@@ -30,7 +30,7 @@ const translations = {
         nakamoto_mint_title: "Elite Mint",
         // Space Specific
         space_subtitle: "THE FINAL FRONTIER ~ REACHING NEW HEIGHTS IN THE MINTVERSE",
-        space_desc: "An ancient spirit of pure light, Space GOAT protects the Bitcoin network with sun-kissed grace. Establish your soul-bond and claim the stars.",
+        space_desc: "Leading the charge for mass adoption, Space GOATs spread the power of Bitcoin smart contracts to the infinite ends of the cosmos.",
         space_mint_title: "Open mint",
         space_wl_title: "OG Whitelist 🔒",
         // Goddess Specific
