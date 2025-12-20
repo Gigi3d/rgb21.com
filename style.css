@@ -1838,6 +1838,128 @@ body.dual-page-mode {
     }
 }
 
+/* How to Mint Section */
+.how-to-section {
+    padding: 6rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.how-to-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-main);
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    background: linear-gradient(to bottom, #fff, #fbbf24);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.how-to-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.step-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(251, 191, 36, 0.1);
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+    height: 100%;
+}
+
+.step-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(251, 191, 36, 0.4);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), 0 0 20px rgba(251, 191, 36, 0.1);
+}
+
+.step-card:hover::before {
+    opacity: 1;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-gold);
+    color: var(--bg-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+}
+
+.step-title {
+    color: var(--text-main);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.step-text {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.step-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step-text li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.step-text li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+    font-weight: 800;
+}
+
+@media (max-width: 968px) {
+    .how-to-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .how-to-title {
+        font-size: 2.2rem;
+    }
+}
+
 /* Global Premium FAQ Styling */
 .faq-rich-content {
     display: flex;
