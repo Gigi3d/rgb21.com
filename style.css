@@ -2026,6 +2026,18 @@ body.dual-page-mode {
     font-weight: 800;
 }
 
+.step-text a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.3);
+    transition: all 0.3s ease;
+}
+
+.step-text a:hover {
+    border-color: var(--accent-gold);
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+}
+
 @media (max-width: 968px) {
     .how-to-grid {
         grid-template-columns: 1fr;
