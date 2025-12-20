@@ -870,14 +870,16 @@ body.dual-page-mode {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    counter-reset: faq-counter;
 }
 
 .faq-item {
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 184, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
+    counter-increment: faq-counter;
 }
 
 .faq-item:hover {
@@ -905,6 +907,13 @@ body.dual-page-mode {
 
 .faq-question span {
     transition: color 0.3s ease;
+}
+
+.faq-question span::before {
+    content: counter(faq-counter) ". ";
+    color: var(--accent-gold);
+    margin-right: 0.5rem;
+    font-weight: 700;
 }
 
 .faq-item:hover .faq-question span {
