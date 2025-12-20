@@ -84,6 +84,8 @@ const translations = {
         </div>",
         faq_q12: "1 Click Atomic Mint",
         faq_a12: "<div class='faq-rich-content'><p>Combining <span class='highlight'>RGB smart contracts</span> and Bitcoin’s <span class='highlight'>PSBT</span>, users get to enjoy scriptless atomic swap protocol by <strong>BitMask</strong>. Once an asset is listed, the user can buy, without any 3rd party.</p></div>",
+        faq_q13: "Why there is a floor price for OG whitelist",
+        faq_a13: "<div class='faq-rich-content'><p>The <span class='highlight'>$21 floor price</span> helps minimize bot activity and ensures a pure market signal. We reward the <span class='highlight'>OG whitelist</span> with an entry price more than 3 times lower than the open mint for being early supporters of BitMask and RGB development.</p></div>",
         how_to_mint_title: "How to Mint GOAT",
         how_to_mint_step1_title: "1. Setup",
         how_to_mint_step1_text: "<ul><li>Create an account on <a href='https://diba.io' target='_blank'>diba.io</a>  and make sure you have installed the <a href='https://chromewebstore.google.com/detail/bitmask/momakdpclmaphlamgjcndbgfckjfpemp?pli=1' target='_blank'>BitMask wallet extension</a></li></ul>",
