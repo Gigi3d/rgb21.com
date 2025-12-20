@@ -82,7 +82,7 @@ const translations = {
             <p>Tilla is a creative portal redefining art, music & crypto culture.</p>\
         </div>",
         faq_q9: "Bitcoin Native Finance",
-        faq_a9: "<div class='faq-rich-content'><p>Financial applications built directly on Bitcoin's base layer and <span class='highlight'>Lightning Network</span>, ensuring maximum security and privacy.</p></div>",
+        faq_a9: "<div class='faq-rich-content'><p>Capital markets and complex financial instruments are migrating to the <span class='highlight'>Bitcoin Standard</span>. This shift enables globally accessible and instant settlements, saving billions typically lost to global asset reconciliation.</p></div>",
         faq_q10: "Bitmask wallet",
         faq_a10: "<div class='faq-rich-content'>\
             <p><strong>BitMask</strong> is a Bitcoin-native wallet and developer stack for <span class='highlight'>client-side validated assets</span> and smart contracts — RGB, enabling non-custodial issuance, trading, and settlement directly on Bitcoin.</p>\
