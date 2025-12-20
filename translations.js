@@ -87,7 +87,7 @@ const translations = {
         how_to_mint_step1_title: "1. Setup",
         how_to_mint_step1_text: "Create an account on diba.io and install the BitMask extension.",
         how_to_mint_step2_title: "2. Preparation",
-        how_to_mint_step2_list: "<li>Add BTC to your BitMask non-custodial wallet.</li><li>Fund your RGB vault to handle transactions.</li><li>Connect your wallet to diba.io.</li>",
+        how_to_mint_step2_list: "<li>Add BTC to your BitMask non-custodial wallet.</li><li>Navigate to the Token tab and fund your RGB vault. This prepares your wallet to handle RGB transactions</li><li>Connect your wallet to diba.io.</li>",
         how_to_mint_step3_title: "3. Mint",
         how_to_mint_step3_list: "<li>On the mint day, click 'Summon' and await mempool confirmation.</li><li>Ensure you have sufficient BTC for a successful mint.</li>",
         why_goat_title: "WHY GOAT",
