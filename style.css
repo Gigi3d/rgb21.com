@@ -1500,6 +1500,18 @@ body.dual-page-mode {
     border-bottom: 2px solid rgba(251, 191, 36, 0.3);
 }
 
+/* Visual separation between banner paragraphs */
+.feature-banner-text p:first-child {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.15);
+}
+
+.feature-banner-text p:last-child {
+    opacity: 0.85;
+    font-size: 1.15rem;
+}
+
 /* Mobile responsive for banner */
 @media (max-width: 1024px) {
     .feature-banner {
