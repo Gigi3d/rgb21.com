@@ -94,13 +94,6 @@ const translations = {
         how_to_mint_step2_list: "<li>Add BTC to your BitMask non-custodial wallet.</li><li>Fund your RGB vault to handle transactions.</li><li>Connect your wallet to diba.io.</li>",
         how_to_mint_step3_title: "3. Mint",
         how_to_mint_step3_list: "<li>On the mint day, click 'Summon' and await mempool confirmation.</li><li>Ensure you have sufficient BTC for a successful mint.</li>",
-        market_title: "Secondary Market p2p trading",
-        market_f1_title: "List UDA",
-        market_f1_desc: "The user who atomically minted can decide to list his UDA for sale using the atomic swap code in the backend.",
-        market_f2_title: "Buy UDA (p2p)",
-        market_f2_desc: "ONLY another user can buy the listed asset. The user must have completed part A, with one click he buys the UDA.",
-        market_f3_title: "Sale Confirmation",
-        market_f3_desc: "The UDA disappears from the seller's wallet and the seller receives the BTC that was offered. The UDA appears in the buyer's wallet, BTC is deducted + fees, and mempool confirmation occurs. Track history on the asset page.",
     },
     zh: {
         nav_goddess: "女神测试",
@@ -197,13 +190,6 @@ const translations = {
         how_to_mint_step2_list: "<li>向您的 BitMask 非托管钱包添加 BTC。</li><li>注资您的 RGB 保险库以处理交易。</li><li>将您的钱包连接到 diba.io。</li>",
         how_to_mint_step3_title: "3. 铸造",
         how_to_mint_step3_list: "<li>在铸造当天，点击“召唤”并等待内存池确认。</li><li>确保您有足够的 BTC 以成功铸造。</li>",
-        market_title: "二级市场 P2P 交易",
-        market_f1_title: "挂单 UDA",
-        market_f1_desc: "已完成原子铸造的用户可以决定使用后端的原子交换代码挂单出售其 UDA。",
-        market_f2_title: "购买 UDA (P2P)",
-        market_f2_desc: "只有另一个用户可以购买列出的资产。用户必须完成 A 部分，点击一下即可购买 UDA。",
-        market_f3_title: "销售确认",
-        market_f3_desc: "UDA 从卖方钱包中消失，卖方收到收到的 BTC。UDA 出现在买方钱包中，扣除 BTC + 手续费，并进行内存池确认。在资产页面跟踪历史记录。",
     }
 };
 
