@@ -49,30 +49,7 @@ const translations = {
         faq_a4: "<div class='faq-rich-content'><p>$Bet introduces a new layer of utility for GOAT holders, enabling participation in decentralized <span class='highlight'>prediction markets</span> directly on the Bitcoin network via RGB.</p></div>",
         faq_q5: "Secondary market - DIBA",
         faq_a5: "<div class='faq-rich-content'><p>Discover and trade your GOATs on <a href='https://diba.io' target='_blank'>DIBA</a>, the first marketplace for <span class='highlight'>Bitcoin-native</span> RGB assets.</p></div>",
-        faq_q6: "How to Mint GOAT",
-        faq_a6: "<div class='faq-rich-content'>\
-            <div class='step'>\
-                <span class='step-num'>1</span>\
-                <p>Create an account on <a href='http://diba.io' target='_blank'>diba.io</a> and install the <strong>BitMask</strong> extension.</p>\
-            </div>\
-            <div class='step'>\
-                <span class='step-num'>2</span>\
-                <p>Prepare the wallet:</p>\
-                <ul>\
-                    <li>Add BTC to your BitMask non-custodial wallet.</li>\
-                    <li>Fund your <strong>RGB vault</strong> to handle transactions.</li>\
-                    <li>Connect your wallet to <a href='http://diba.io' target='_blank'>diba.io</a>.</li>\
-                </ul>\
-            </div>\
-            <div class='step'>\
-                <span class='step-num'>3</span>\
-                <p>Mint:</p>\
-                <ul>\
-                    <li>On the mint day, click <strong>'Summon'</strong> and await mempool confirmation.</li>\
-                </ul>\
-            </div>\
-            <p class='footer-note'>Ensure you have sufficient BTC for a successful mint.</p>\
-        </div>",
+
         faq_q7: "GOAT narrative",
         faq_a7: "<div class='faq-rich-content'>\
             <p>The GOAT collection is a story of the Bitcoin Movement, bringing to light critical events in Bitcoin history since genesis. The 11K collection is broken down into 2 distinct power groups:</p>\
