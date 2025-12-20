@@ -87,6 +87,13 @@ const translations = {
             <p>Based in Switzerland, this non-profit organization is dedicated to accelerating the development, coordination, and global adoption of the RGB technology, marking its launch alongside the <span class='highlight'>RGB v0.11</span> milestone.</p>\
             <p class='footer-note'>Read the full announcement on <a href='https://www.nasdaq.com/articles/rgb-v0111-launches-allowing-creation-digital-assets-bitcoin-mainnet' target='_blank'>Nasdaq</a>.</p>\
         </div>",
+        how_to_mint_title: "How to Mint GOAT",
+        how_to_mint_step1_title: "1. Setup",
+        how_to_mint_step1_text: "Create an account on diba.io and install the BitMask extension.",
+        how_to_mint_step2_title: "2. Preparation",
+        how_to_mint_step2_list: "<li>Add BTC to your BitMask non-custodial wallet.</li><li>Fund your RGB vault to handle transactions.</li><li>Connect your wallet to diba.io.</li>",
+        how_to_mint_step3_title: "3. Mint",
+        how_to_mint_step3_list: "<li>On the mint day, click 'Summon' and await mempool confirmation.</li><li>Ensure you have sufficient BTC for a successful mint.</li>",
     },
     zh: {
         nav_goddess: "女神测试",
@@ -174,8 +181,15 @@ const translations = {
         faq_a11: "<div class='faq-rich-content'>\
             <p><span class='highlight'>RGB 协议协会</span> 于 2024 年 7 月 14 日正式宣布成立，这是由生态系统中的关键成员共同发起的，包括 <strong>Bitfinex</strong>、<strong>Fulgur Ventures</strong>、<strong>Bitmask by DIBA</strong>、<strong>Plan B Network</strong> 等。</p>\
             <p>该非营利组织总部位于瑞士，致力于加速 RGB 技术的开发、协调和全球采用，并在 <span class='highlight'>RGB v0.11</span> 里程碑发布之际宣布成立。</p>\
-            <p class='footer-note'>在 <a href='https://www.nasdaq.com/articles/rgb-v0111-launches-allowing-creation-digital-assets-bitcoin-mainnet' target='_blank'>Nasdaq</a> 上阅读完整公告。</p>\
+            <p class='footer-note'>在 <a href='https://www.nasdaq.com/articles/rgb-v0111-launches-allowing-creation-digital-assets-bitcoin-mainnet' target='_blank'>纳斯达克 (Nasdaq)</a> 上阅读完整公告。</p>\
         </div>",
+        how_to_mint_title: "如何铸造 GOAT",
+        how_to_mint_step1_title: "1. 设置",
+        how_to_mint_step1_text: "在 diba.io 上创建账户并安装 BitMask 扩展。",
+        how_to_mint_step2_title: "2. 准备钱包",
+        how_to_mint_step2_list: "<li>向您的 BitMask 非托管钱包添加 BTC。</li><li>注资您的 RGB 保险库以处理交易。</li><li>将您的钱包连接到 diba.io。</li>",
+        how_to_mint_step3_title: "3. 铸造",
+        how_to_mint_step3_list: "<li>在铸造当天，点击“召唤”并等待内存池确认。</li><li>确保您有足够的 BTC 以成功铸造。</li>",
     }
 };
 
