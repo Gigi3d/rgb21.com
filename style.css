@@ -1512,6 +1512,15 @@ body.dual-page-mode {
     font-size: 1.15rem;
 }
 
+/* CTA line styling */
+.feature-banner-cta {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--accent-gold);
+    opacity: 1 !important;
+}
+
 /* Mobile responsive for banner */
 @media (max-width: 1024px) {
     .feature-banner {
