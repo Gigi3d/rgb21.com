@@ -204,6 +204,32 @@ class LanguageManager {
         this.updateButtons();
         this.translatePage();
         this.applyLanguageToBody();
+        this.initSplashScreen();
+    }
+
+    initSplashScreen() {
+        // Ensure splash screen stays for at least 800ms for premium feel
+        const minLoadTime = 800;
+        const startLoad = Date.now();
+
+        window.addEventListener('load', () => {
+            const elapsed = Date.now() - startLoad;
+            const remaining = Math.max(0, minLoadTime - elapsed);
+
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                if (splash) {
+                    splash.classList.add('hidden');
+
+                    // Trigger hero animations after splash fade
+                    setTimeout(() => {
+                        document.querySelectorAll('.hero-section, .navbar, .mint-section').forEach(el => {
+                            el.classList.add('active'); // Ensure they are visible
+                        });
+                    }, 400);
+                }
+            }, remaining);
+        });
     }
 
     setLanguage(lang) {
