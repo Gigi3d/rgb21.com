@@ -874,6 +874,33 @@ body.dual-page-mode {
     counter-reset: faq-counter;
 }
 
+.faq-demarcation {
+    padding: 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0.8;
+}
+
+.faq-demarcation::before,
+.faq-demarcation::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.3), transparent);
+}
+
+.faq-demarcation span {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
 .faq-item {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
