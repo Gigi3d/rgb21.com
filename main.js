@@ -321,6 +321,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // ... (keep the rest of the existing logic) ...
 
 
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    }
+
     // Atomic Mint button clicks
     const mintButtons = document.querySelectorAll('.mint-btn:not(.disabled), .whitelist-btn, .floating-mint-cta');
 
