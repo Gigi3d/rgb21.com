@@ -316,20 +316,31 @@ class LanguageManager {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const langManager = new LanguageManager();
-
-    // ... (keep the rest of the existing logic) ...
-
-
-    // Mobile Menu Toggle
+    // Mobile Menu Logic - Priority Execution
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
+    console.log('Menu elements found:', { menuToggle, navLinks });
+
     if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent bubbling issues
+            const isActive = menuToggle.classList.contains('active');
+
+            if (isActive) {
+                // Close Menu
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                navLinks.style.right = '-100%'; // Force style
+            } else {
+                // Open Menu
+                menuToggle.classList.add('active');
+                navLinks.classList.add('active');
+                document.body.classList.add('menu-open');
+                navLinks.style.right = '0'; // Force style
+            }
+            console.log('Menu toggled. Active:', !isActive);
         });
 
         // Close menu when clicking a link
@@ -338,9 +349,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
                 document.body.classList.remove('menu-open');
+                navLinks.style.right = '-100%';
             });
         });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (document.body.classList.contains('menu-open') &&
+                !navLinks.contains(e.target) &&
+                !menuToggle.contains(e.target)) {
+
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                navLinks.style.right = '-100%';
+            }
+        });
     }
+
+    const langManager = new LanguageManager();
+
+    // ... (keep the rest of the existing logic) ...
+
+
+
 
     // Atomic Mint button clicks
     const mintButtons = document.querySelectorAll('.mint-btn:not(.disabled), .whitelist-btn, .floating-mint-cta');
