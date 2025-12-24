@@ -92,8 +92,6 @@ const translations = {
 
         faq_q3: "Is it possible to inscribe RGB21?",
         faq_a3: "<div class='faq-rich-content'><p>The future is onchain. GOAT holders can secure their legacy by keeping a minimal footprint on the blockchain. It is the most efficient way to protect what you own.</p></div>",
-        faq_q13: "Why does the OG whitelist have a $21 floor price?",
-        faq_a13: "<div class='faq-rich-content'><p>We value our earliest supporters. The floor price ensures a fair and sustainable market. It is our way of saying thank you to those who saw the vision first.</p></div>",
         how_to_mint_title: "How to Mint GOAT",
         how_to_mint_step1_title: "1. Setup",
         how_to_mint_step1_text: "<ul><li>Create an account on <a href='https://diba.io' target='_blank'>diba.io</a>  and make sure you have installed the <a href='https://chromewebstore.google.com/detail/bitmask/momakdpclmaphlamgjcndbgfckjfpemp?pli=1' target='_blank'>BitMask wallet extension</a></li></ul>",
@@ -380,8 +378,6 @@ const translations = {
 
         faq_q3: "可以铭刻 RGB21 吗？",
         faq_a3: "<div class='faq-rich-content'><p>未来，GOAT 持有者可以将 <span class='highlight'>RGB21 缩略图</span>直接铭刻在链上。这引用了链下资产，同时在区块链上保持最小的占用空间。这是一种廉价且持久的方式来保护您的遗产。</p></div>",
-        faq_q13: "为什么 OG 白名单有 21 美元的底价？",
-        faq_a13: "<div class='faq-rich-content'><p>我们珍视最早的支持者。底价确保了一个公平且可持续的市场。这是我们对那些最早洞察远见的人表达感谢的方式。</p></div>",
         how_to_mint_title: "如何铸造 GOAT",
         how_to_mint_step1_title: "1. 设置",
         how_to_mint_step1_text: "在 diba.io 上创建账户并安装 BitMask 扩展。",
