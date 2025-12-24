@@ -141,7 +141,9 @@ const translations = {
         queen_subtitle: "慈善传承",
         queen_desc: "赠予社区的礼物。210 件独一无二的历史见证。测试 RGB 基础设施，孕育比特币第三季。技术卓越与善意相遇。",
         queen_mint_title: "基础设施测试",
+        queen_mint_title: "基础设施测试",
         free_mint: "免费铸造",
+        summon_btn_free: "免费铸造 @ DIBA.io",
         // FAQ items
         faq_q8: "艺术家",
         faq_a8: "<div class='faq-rich-content'><p>由致力于现代比特币美学和 <span class='highlight'>“比特币原生”</span> 文化的富有远见的设计师精心打造。</p></div>",
