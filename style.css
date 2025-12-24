@@ -702,10 +702,7 @@ body.dual-page-mode {
         padding: 0 1.5rem;
     }
 
-    .nav-links {
-        display: none;
-        /* Hide for basic hamburger toggle if needed later */
-    }
+    /* .nav-links rule removed to fix mobile menu visibility */
 
     /* Basic mobile nav fix - stack or hide */
     .user-actions {
