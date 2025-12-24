@@ -447,35 +447,44 @@ body {
 
     .nav-links {
         position: fixed;
-        top: 0;
+        top: 70px;
+        /* Below header */
         right: -100%;
-        /* Hidden off-screen */
-        width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.95);
-        backdrop-filter: blur(20px);
+        /* Hidden */
+        width: 220px;
+        /* Compact width */
+        height: auto;
+        /* Fit content */
+        background: #0a0a0a !important;
+        /* Solid dark background */
+        border: 1px solid rgba(255, 215, 0, 0.2);
+        /* Subtle Gold border */
+        border-radius: 12px;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        padding: 1.5rem 0;
+        transition: right 0.3s ease;
         z-index: 10000;
-        gap: 2rem;
+        gap: 1.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
     }
 
     .nav-links.active {
-        right: 0;
-        /* Slide in */
+        right: 1rem !important;
+        /* Slide in to 1rem from right */
     }
 
     .nav-links a {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        /* Smaller font */
         opacity: 1;
-        /* Force visible */
-        transform: translateY(0);
-        margin: 1rem 0;
+        transform: none;
+        margin: 0.5rem 0;
         color: #fff !important;
-        /* Force white text */
         display: block;
+        text-align: center;
+        width: 100%;
     }
 
     /* Staggered animation removed */

@@ -332,13 +332,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
                 document.body.classList.remove('menu-open');
-                navLinks.style.right = '-100%'; // Force style
+                navLinks.style.right = '-100%';
             } else {
                 // Open Menu
                 menuToggle.classList.add('active');
                 navLinks.classList.add('active');
                 document.body.classList.add('menu-open');
-                navLinks.style.right = '0'; // Force style
+                navLinks.style.right = '1rem'; // Match CSS
             }
             console.log('Menu toggled. Active:', !isActive);
         });
