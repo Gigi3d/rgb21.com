@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB21 Technical Overview | Bitcoin Season 3</title>
-    <meta name="description"
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <title data-i18n="rgb21_page_title">RGB21 Technical Overview | Bitcoin Season 3</title>
+    <meta name="description" data-i18n="rgb21_meta_desc"
         content="Technical overview of RGB21: The official standard for Unique Digital Assets (UDAs) on the RGB protocol. Explore GOAT, RGB21 and Bitcoin Season 3.">
+    <meta property="og:description" data-i18n="rgb21_meta_desc"
+        content="Technical overview of RGB21: The official standard for Unique Digital Assets (UDAs) on the RGB protocol.">
+    <meta property="twitter:description" data-i18n="rgb21_meta_desc"
+        content="Technical overview of RGB21: The official standard for Unique Digital Assets (UDAs) on the RGB protocol.">
     <meta property="og:image" content="https://atomic-mint-ui.vercel.app/assets/Space.GOAT.png">
     <meta property="twitter:image" content="https://atomic-mint-ui.vercel.app/assets/Space.GOAT.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -39,147 +44,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <style>
-        .technical-container {
-            max-width: 900px;
-            margin: 4rem auto;
-            padding: 3rem;
-            background: rgba(20, 20, 20, 0.6);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 24px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-        }
-
-        .tech-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 2rem;
-        }
-
-        .tech-title {
-            font-size: 3rem;
-            font-weight: 900;
-            background: linear-gradient(to right, #fbbf24, #fff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-            letter-spacing: -1px;
-        }
-
-        .tech-subtitle {
-            font-size: 1.2rem;
-            color: #d1d5db;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .tech-content {
-            color: #e5e7eb;
-        }
-
-        .tech-content h2 {
-            font-size: 2rem;
-            color: var(--accent-gold);
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid var(--accent-gold);
-            padding-left: 1rem;
-        }
-
-        .tech-content h3 {
-            font-size: 1.5rem;
-            color: #fff;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .tech-content p {
-            margin-bottom: 1.2rem;
-            line-height: 1.7;
-            color: #d1d5db;
-        }
-
-        .tech-content ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-        }
-
-        .tech-content li {
-            margin-bottom: 0.5rem;
-            color: #d1d5db;
-        }
-
-        .tech-content li strong {
-            color: white;
-        }
-
-        /* Table Styles */
-        .tech-table-wrapper {
-            overflow-x: auto;
-            margin: 2rem 0;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        .tech-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.95rem;
-        }
-
-        .tech-table th,
-        .tech-table td {
-            text-align: left;
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .tech-table th {
-            background: rgba(251, 191, 36, 0.1);
-            color: var(--accent-gold);
-            font-weight: 700;
-        }
-
-        .tech-table tr:hover {
-            background: rgba(255, 255, 255, 0.02);
-        }
-
-        .tech-table td:first-child {
-            font-weight: 600;
-            color: #fff;
-        }
-
-        code {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            font-family: monospace;
-            color: #fbbf24;
-            font-size: 0.9em;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .technical-container {
-                padding: 1.5rem;
-                margin: 2rem 1rem;
-            }
-
-            .tech-title {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
 </head>
 
-<body class="single-page-mode">
+<body class="single-page-mode mode-rgb21-overview">
     <div id="splash-screen">
         <div class="splash-content">
-            <div class="splash-text">LOADING KNOWLEDGE BASE...</div>
+            <div class="splash-text" data-i18n="rgb21_splash">LOADING KNOWLEDGE BASE...</div>
             <div class="splash-bar">
                 <div class="splash-progress"></div>
             </div>
@@ -205,7 +75,6 @@
             <a href="rgb21_overview.html" class="active">RGB21</a>
         </nav>
         <div class="user-actions">
-            <!-- Language switcher removed for this page as content is English only/static for now, or keep styling consistent -->
             <div class="lang-switcher">
                 <button class="lang-btn active" data-lang="en">EN</button>
                 <span class="lang-divider">|</span>
@@ -219,12 +88,13 @@
 
     <main class="technical-container">
         <div class="tech-header">
-            <h1>RGB21: Unique Digital Asset (UDA) Technical Overview</h1>
-            <p class="tech-subtitle">The standard for Bitcoin Season 3</p>
+            <h1 data-i18n="rgb21_header_title">RGB21: Unique Digital Asset (UDA) Technical Overview</h1>
+            <p class="tech-subtitle" data-i18n="rgb21_header_subtitle">The standard for Bitcoin Season 3</p>
         </div>
 
         <div class="tech-content">
-            <p style="margin-top: 1rem;"><strong>RGB21</strong> is the official standard for <strong>Unique Digital
+            <p style="margin-top: 1rem;" data-i18n="rgb21_intro"><strong>RGB21</strong> is the official standard for
+                <strong>Unique Digital
                     Assets
                     (<span class="highlight">UDAs</span>)</strong> on the RGB protocol. Unlike traditional NFTs (e.g.,
                 ERC-721 on Ethereum), RGB21 leverages <strong>Client-Side Validation</strong> and <strong>Single-Use
@@ -232,118 +102,139 @@
                 blockchain.
             </p>
 
-            <h2>1. Core Concepts</h2>
+            <h2 data-i18n="rgb21_section1_title">1. Core Concepts</h2>
 
-            <h3>Single-Use Seals & Bitcoin Anchoring</h3>
-            <p>Every RGB21 asset is "bound" to a specific Bitcoin UTXO. To transfer the asset, the owner must spend that
+            <h3 data-i18n="rgb21_section1_h3_1">Single-Use Seals & Bitcoin Anchoring</h3>
+            <p data-i18n="rgb21_section1_p1">Every RGB21 asset is "bound" to a specific Bitcoin UTXO. To transfer the
+                asset, the owner must spend that
                 UTXO, creating a "witness" on the Bitcoin blockchain. The asset logic itself lives off-chain, but its
                 ownership is secured by the strongest consensus mechanism in existence.</p>
 
-            <h3>Client-Side Validation</h3>
-            <p>Instead of every node on the network validating every <span class="highlight">UDA</span> (like in
+            <h3 data-i18n="rgb21_section1_h3_2">Client-Side Validation</h3>
+            <p data-i18n="rgb21_section1_p2">Instead of every node on the network validating every <span
+                    class="highlight">UDA</span> (like in
                 Ethereum), only the parties involved
                 in a transaction validate the history of the asset. This ensures:</p>
             <ul>
-                <li><strong>Scalability</strong>: No global state bloat.</li>
-                <li><strong>Privacy</strong>: Asset details are only known to the owners and their chosen recipients.
+                <li data-i18n="rgb21_section1_li1"><strong>Scalability</strong>: No global state bloat.</li>
+                <li data-i18n="rgb21_section1_li2"><strong>Privacy</strong>: Asset details are only known to the owners
+                    and their chosen recipients.
                 </li>
             </ul>
 
-            <h3>Unique Digital Asset (UDA) Schema</h3>
-            <p>RGB21 is defined under the UDA schema, which is designed for assets that are unique and non-fungible.</p>
+            <h3 data-i18n="rgb21_section1_h3_3">Unique Digital Asset (UDA) Schema</h3>
+            <p data-i18n="rgb21_section1_p3">RGB21 is defined under the UDA schema, which is designed for assets that
+                are unique and non-fungible.</p>
 
-            <h2>2. Technical Structure (Schema & Global State)</h2>
-            <p>The RGB21 standard defines a structured "Global State" that contains the metadata for the asset and its
+            <h2 data-i18n="rgb21_section2_title">2. Technical Structure (Schema & Global State)</h2>
+            <p data-i18n="rgb21_section2_p1">The RGB21 standard defines a structured "Global State" that contains the
+                metadata for the asset and its
                 individual tokens.</p>
 
-            <h3>A. Asset Specification (<code>spec</code>)</h3>
-            <p>Defines the high-level identity of the asset class.</p>
+            <h3 data-i18n="rgb21_section1_h3_1">A. Asset Specification (<code>spec</code>)</h3>
+            <p data-i18n="rgb21_section2_p2">Defines the high-level identity of the asset class.</p>
             <ul>
-                <li><strong>Ticker</strong>: A short identifier (e.g., "BAYC").</li>
-                <li><strong>Name</strong>: The full name of the <span class="highlight">UDA</span> collection.</li>
-                <li><strong>Precision</strong>: Always 0 for true <span class="highlight">UDAs</span>, but the schema
+                <li data-i18n="rgb21_section2_li1"><strong>Ticker</strong>: A short identifier (e.g., "BAYC").</li>
+                <li data-i18n="rgb21_section2_li2"><strong>Name</strong>: The full name of the <span
+                        class="highlight">UDA</span> collection.</li>
+                <li data-i18n="rgb21_section2_li3"><strong>Precision</strong>: Always 0 for true <span
+                        class="highlight">UDAs</span>, but the schema
                     allows for fractional <span class="highlight">UDAs</span>.</li>
             </ul>
 
-            <h3>B. Contract Terms (<code>terms</code>)</h3>
-            <p>Logical or legal conditions associated with the asset.</p>
+            <h3 data-i18n="rgb21_section2_h3_2">B. Contract Terms (<code>terms</code>)</h3>
+            <p data-i18n="rgb21_section2_p3">Logical or legal conditions associated with the asset.</p>
             <ul>
-                <li><strong>Ricardian Contract</strong>: Human-readable text that describes the rights and obligations
+                <li data-i18n="rgb21_section2_li4"><strong>Ricardian Contract</strong>: Human-readable text that
+                    describes the rights and obligations
                     of the owner.</li>
-                <li><strong>Media</strong>: Optional legalese or logical data in binary form.</li>
+                <li data-i18n="rgb21_section2_li5"><strong>Media</strong>: Optional legalese or logical data in binary
+                    form.</li>
             </ul>
 
-            <h3>C. Token Data (<code>tokens</code>)</h3>
-            <p>This is where the individual <span class="highlight">UDA</span> data lives.</p>
+            <h3 data-i18n="rgb21_section2_h3_3">C. Token Data (<code>tokens</code>)</h3>
+            <p data-i18n="rgb21_section2_p4">This is where the individual <span class="highlight">UDA</span> data lives.
+            </p>
             <ul>
-                <li><strong>Index</strong>: A unique <code>u32</code> identifier (Token ID).</li>
-                <li><strong>Name/Ticker</strong>: Individual tokens can have their own names.</li>
-                <li><strong>Preview</strong>: A small "embedded" thumbnail (usually &lt; 64KB) for fast UI rendering.
+                <li data-i18n="rgb21_section2_li6"><strong>Index</strong>: A unique <code>u32</code> identifier (Token
+                    ID).</li>
+                <li data-i18n="rgb21_section2_li7"><strong>Name/Ticker</strong>: Individual tokens can have their own
+                    names.</li>
+                <li data-i18n="rgb21_section2_li8"><strong>Preview</strong>: A small "embedded" thumbnail (usually &lt;
+                    64KB) for fast UI rendering.
                 </li>
-                <li><strong>Media</strong>: A hash/digest (e.g., SHA-256) of the full-resolution asset file.</li>
-                <li><strong>Attachments</strong>: A map of additional files (e.g., 3D models, high-res versions,
+                <li data-i18n="rgb21_section2_li9"><strong>Media</strong>: A hash/digest (e.g., SHA-256) of the
+                    full-resolution asset file.</li>
+                <li data-i18n="rgb21_section2_li10"><strong>Attachments</strong>: A map of additional files (e.g., 3D
+                    models, high-res versions,
                     metadata JSONs).</li>
             </ul>
 
-            <h2>3. Implementation in Bitmask (<code>src/rgb/issue.rs</code>)</h2>
-            <p>In this codebase, RGB21 assets are handled via the <code>issue_uda_asset</code> function.</p>
+            <h2 data-i18n="rgb21_section3_title">3. Implementation in Bitmask (<code>src/rgb/issue.rs</code>)</h2>
+            <p data-i18n="rgb21_section3_p1">In this codebase, RGB21 assets are handled via the
+                <code>issue_uda_asset</code> function.
+            </p>
 
-            <h3>Metadata Handling</h3>
-            <p>Bitmask supports complex media structures:</p>
+            <h3 data-i18n="rgb21_section3_h3_1">Metadata Handling</h3>
+            <p data-i18n="rgb21_section3_p2">Bitmask supports complex media structures:</p>
             <ul>
-                <li><strong>Embedded Media</strong>: Previews are base64 decoded and embedded directly into the contract
+                <li data-i18n="rgb21_section3_li1"><strong>Embedded Media</strong>: Previews are base64 decoded and
+                    embedded directly into the contract
                     as a SmallBlob.</li>
-                <li><strong>Proxied Media</strong>: For large files, Bitmask uses a proxy server. The file is uploaded,
+                <li data-i18n="rgb21_section3_li2"><strong>Proxied Media</strong>: For large files, Bitmask uses a proxy
+                    server. The file is uploaded,
                     and its digest (hash) and content type are stored in the contract's Attachment or Media fields.</li>
             </ul>
 
-            <h3>Ownership State</h3>
-            <p>The <code>assetOwner</code> state links a specific <code>TokenIndex</code> to a <code>BuilderSeal</code>
+            <h3 data-i18n="rgb21_section3_h3_2">Ownership State</h3>
+            <p data-i18n="rgb21_section3_p3">The <code>assetOwner</code> state links a specific <code>TokenIndex</code>
+                to a <code>BuilderSeal</code>
                 (a Bitcoin UTXO).</p>
 
-            <h2>4. Key Advantages of RGB21</h2>
+            <h2 data-i18n="rgb21_section4_title">4. Key Advantages of RGB21</h2>
 
             <div class="tech-table-wrapper">
                 <table class="tech-table">
                     <thead>
                         <tr>
-                            <th>Feature</th>
-                            <th>RGB21 (Bitcoin)</th>
-                            <th>ERC-721 (Ethereum)</th>
+                            <th data-i18n="rgb21_table1_h1">Feature</th>
+                            <th data-i18n="rgb21_table1_h2">RGB21 (Bitcoin)</th>
+                            <th data-i18n="rgb21_table1_h3">ERC-721 (Ethereum)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Validation</td>
-                            <td>Client-side (Local)</td>
-                            <td>Global (All nodes)</td>
+                            <td data-i18n="rgb21_table1_r1_c1">Validation</td>
+                            <td data-i18n="rgb21_table1_r1_c2">Client-side (Local)</td>
+                            <td data-i18n="rgb21_table1_r1_c3">Global (All nodes)</td>
                         </tr>
                         <tr>
-                            <td>Privacy</td>
-                            <td>High (Off-chain history)</td>
-                            <td>Low (Public ledger)</td>
+                            <td data-i18n="rgb21_table1_r2_c1">Privacy</td>
+                            <td data-i18n="rgb21_table1_r2_c2">High (Off-chain history)</td>
+                            <td data-i18n="rgb21_table1_r2_c3">Low (Public ledger)</td>
                         </tr>
                         <tr>
-                            <td>Cost</td>
-                            <td>Low (Bitcoin transaction only)</td>
-                            <td>High (Gas fees)</td>
+                            <td data-i18n="rgb21_table1_r3_c1">Cost</td>
+                            <td data-i18n="rgb21_table1_r3_c2">Low (Bitcoin transaction only)</td>
+                            <td data-i18n="rgb21_table1_r3_c3">High (Gas fees)</td>
                         </tr>
                         <tr>
-                            <td>Storage</td>
-                            <td>Hybrid (On-chain anchoring, off-chain data)</td>
-                            <td>On-chain (often just a URI)</td>
+                            <td data-i18n="rgb21_table1_r4_c1">Storage</td>
+                            <td data-i18n="rgb21_table1_r4_c2">Hybrid (On-chain anchoring, off-chain data)</td>
+                            <td data-i18n="rgb21_table1_r4_c3">On-chain (often just a URI)</td>
                         </tr>
                         <tr>
-                            <td>Security</td>
-                            <td>Bitcoin PoW</td>
-                            <td>Ethereum PoS</td>
+                            <td data-i18n="rgb21_table1_r5_c1">Security</td>
+                            <td data-i18n="rgb21_table1_r5_c2">Bitcoin PoW</td>
+                            <td data-i18n="rgb21_table1_r5_c3">Ethereum PoS</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3>4.1 RGB21 vs. Ordinals (Digital Artifacts)</h3>
-            <p>While Ordinals have brought significant attention to Bitcoin <span class="highlight">UDAs</span>, RGB21
+            <h3 data-i18n="rgb21_section4_h3_1">4.1 RGB21 vs. Ordinals (Digital Artifacts)</h3>
+            <p data-i18n="rgb21_section4_p1">While Ordinals have brought significant attention to Bitcoin <span
+                    class="highlight">UDAs</span>, RGB21
                 offers several distinct
                 technical advantages for institutional and privacy-conscious users.</p>
 
@@ -351,293 +242,356 @@
                 <table class="tech-table">
                     <thead>
                         <tr>
-                            <th>Feature</th>
-                            <th>RGB21 (UDA)</th>
-                            <th>Ordinals / Inscriptions</th>
+                            <th data-i18n="rgb21_table2_h1">Feature</th>
+                            <th data-i18n="rgb21_table2_h2">RGB21 (UDA)</th>
+                            <th data-i18n="rgb21_table2_h3">Ordinals / Inscriptions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Data Storage</td>
-                            <td>Off-chain (Client-side)</td>
-                            <td>On-chain (Witness data)</td>
+                            <td data-i18n="rgb21_table2_r1_c1">Data Storage</td>
+                            <td data-i18n="rgb21_table2_r1_c2">Off-chain (Client-side)</td>
+                            <td data-i18n="rgb21_table2_r1_c3">On-chain (Witness data)</td>
                         </tr>
                         <tr>
-                            <td>Privacy</td>
-                            <td>High (Private ownership)</td>
-                            <td>None (Publicly visible)</td>
+                            <td data-i18n="rgb21_table2_r2_c1">Privacy</td>
+                            <td data-i18n="rgb21_table2_r2_c2">High (Private ownership)</td>
+                            <td data-i18n="rgb21_table2_r2_c3">None (Publicly visible)</td>
                         </tr>
                         <tr>
-                            <td>Scalability</td>
-                            <td>Unlimited (Off-chain data)</td>
-                            <td>Limited (Block space constraints)</td>
+                            <td data-i18n="rgb21_table2_r3_c1">Scalability</td>
+                            <td data-i18n="rgb21_table2_r3_c2">Unlimited (Off-chain data)</td>
+                            <td data-i18n="rgb21_table2_r3_c3">Limited (Block space constraints)</td>
                         </tr>
                         <tr>
-                            <td>Fees</td>
-                            <td>Minimal (Payment for anchor only)</td>
-                            <td>High (Payment for data bytes)</td>
+                            <td data-i18n="rgb21_table2_r4_c1">Fees</td>
+                            <td data-i18n="rgb21_table2_r4_c2">Minimal (Payment for anchor only)</td>
+                            <td data-i18n="rgb21_table2_r4_c3">High (Payment for data bytes)</td>
                         </tr>
                         <tr>
-                            <td>Programmability</td>
-                            <td>Advanced (Smart contracts)</td>
-                            <td>Basic (Static inscriptions)</td>
+                            <td data-i18n="rgb21_table2_r5_c1">Programmability</td>
+                            <td data-i18n="rgb21_table2_r5_c2">Advanced (Smart contracts)</td>
+                            <td data-i18n="rgb21_table2_r5_c3">Basic (Static inscriptions)</td>
                         </tr>
                         <tr>
-                            <td>Impact on Network</td>
-                            <td>None (Zero UTXO bloat)</td>
-                            <td>High (Permanent chain bloat)</td>
+                            <td data-i18n="rgb21_table2_r6_c1">Impact on Network</td>
+                            <td data-i18n="rgb21_table2_r6_c2">None (Zero UTXO bloat)</td>
+                            <td data-i18n="rgb21_table2_r6_c3">High (Permanent chain bloat)</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3>Advantages of RGB21 Over Ordinals:</h3>
+            <h3 data-i18n="rgb21_section4_h3_2">Advantages of RGB21 Over Ordinals:</h3>
             <ul>
-                <li><strong>Scalability</strong>: RGB21 does not consume Bitcoin block space for media storage. You can
+                <li data-i18n="rgb21_section4_li1"><strong>Scalability</strong>: RGB21 does not consume Bitcoin block
+                    space for media storage. You can
                     have a 1GB <span class="highlight">UDA</span> with the same on-chain footprint as a 1KB one.</li>
-                <li><strong>Privacy</strong>: In Ordinals, every image is public. In RGB21, you only share the asset
+                <li data-i18n="rgb21_section4_li2"><strong>Privacy</strong>: In Ordinals, every image is public. In
+                    RGB21, you only share the asset
                     data with those you choose.</li>
-                <li><strong>Cost</strong>: Since data is not stored on-chain, users don't pay "per byte" fees to Bitcoin
+                <li data-i18n="rgb21_section4_li3"><strong>Cost</strong>: Since data is not stored on-chain, users don't
+                    pay "per byte" fees to Bitcoin
                     miners for the media content.</li>
-                <li><strong>No Chain Bloat</strong>: RGB21 avoids the "dust" and UTXO set growth associated with massive
+                <li data-i18n="rgb21_section4_li4"><strong>No Chain Bloat</strong>: RGB21 avoids the "dust" and UTXO set
+                    growth associated with massive
                     on-chain inscriptions.</li>
             </ul>
 
-            <h2>6. Cross-Contract Composability & Atomic Swaps</h2>
-            <p>One of the most powerful features of the RGB protocol, as implemented in Bitmask, is the ability to
+            <h2 data-i18n="rgb21_section6_title">6. Cross-Contract Composability & Atomic Swaps</h2>
+            <p data-i18n="rgb21_section6_p1">One of the most powerful features of the RGB protocol, as implemented in
+                Bitmask, is the ability to
                 perform <strong>Cross-Contract Atomic Swaps</strong>. This allows users to trade different types of
                 assets (e.g., selling an <span class="highlight">UDA</span> for a fungible token) in a single, atomic
                 Bitcoin transaction.</p>
 
-            <h3>A. Atomicity via "Extra Shards"</h3>
-            <p>Bitmask utilizes an "Extra Shards" mechanism to bundle multiple RGB contracts into a single swap offer.
+            <h3 data-i18n="rgb21_section6_h3_1">A. Atomicity via "Extra Shards"</h3>
+            <p data-i18n="rgb21_section6_p2">Bitmask utilizes an "Extra Shards" mechanism to bundle multiple RGB
+                contracts into a single swap offer.
             </p>
             <ul>
-                <li><strong>Primary Asset</strong>: The asset being offered by the seller.</li>
-                <li><strong>Counterparty Asset</strong>: The asset requested in exchange (e.g., an RGB20 token).</li>
-                <li><strong>Fascia Generation</strong>: During the swap, a "fascia" (a bundle of state transitions) is
+                <li data-i18n="rgb21_section6_li1"><strong>Primary Asset</strong>: The asset being offered by the
+                    seller.</li>
+                <li data-i18n="rgb21_section6_li2"><strong>Counterparty Asset</strong>: The asset requested in exchange
+                    (e.g., an RGB20 token).</li>
+                <li data-i18n="rgb21_section6_li3"><strong>Fascia Generation</strong>: During the swap, a "fascia" (a
+                    bundle of state transitions) is
                     generated that encompasses all involved contracts. This ensures that the swap is all-or-nothing.
                 </li>
             </ul>
 
-            <h3>B. Supported Swap Pairs</h3>
-            <p>The Bitmask implementation explicitly supports and tests the following atomic swap pairs:</p>
+            <h3 data-i18n="rgb21_section6_h3_2">B. Supported Swap Pairs</h3>
+            <p data-i18n="rgb21_section6_p3">The Bitmask implementation explicitly supports and tests the following
+                atomic swap pairs:</p>
             <ul>
-                <li><strong>RGB21 ↔ Bitcoin (Sats)</strong>: Buying/selling <span class="highlight">UDAs</span> for BTC.
+                <li data-i18n="rgb21_section6_li4"><strong>RGB21 ↔ Bitcoin (Sats)</strong>: Buying/selling <span
+                        class="highlight">UDAs</span> for BTC.
                 </li>
-                <li><strong>RGB20 ↔ Bitcoin (Sats)</strong>: Buying/selling fungible tokens for BTC.</li>
-                <li><strong>RGB20 ↔ RGB20</strong>: Trading one type of fungible token for another.</li>
-                <li><strong>RGB21 ↔ RGB21</strong>: Trading one <span class="highlight">UDA</span> for another.</li>
-                <li><strong>RGB20 ↔ RGB21</strong>: Buying/selling an <span class="highlight">UDA</span> using a custom
+                <li data-i18n="rgb21_section6_li5"><strong>RGB20 ↔ Bitcoin (Sats)</strong>: Buying/selling fungible
+                    tokens for BTC.</li>
+                <li data-i18n="rgb21_section6_li6"><strong>RGB20 ↔ RGB20</strong>: Trading one type of fungible token
+                    for another.</li>
+                <li data-i18n="rgb21_section6_li7"><strong>RGB21 ↔ RGB21</strong>: Trading one <span
+                        class="highlight">UDA</span> for another.</li>
+                <li data-i18n="rgb21_section6_li8"><strong>RGB20 ↔ RGB21</strong>: Buying/selling an <span
+                        class="highlight">UDA</span> using a custom
                     fungible token (e.g., a
                     project's utility token).</li>
             </ul>
 
-            <h3>C. Technical Foundation: Anchor Sharding</h3>
-            <p>The composability is rooted in <strong>Anchor Sharding</strong>. A single Bitcoin transaction can act as
+            <h3 data-i18n="rgb21_section6_h3_3">C. Technical Foundation: Anchor Sharding</h3>
+            <p data-i18n="rgb21_section6_p4">The composability is rooted in <strong>Anchor Sharding</strong>. A single
+                Bitcoin transaction can act as
                 a container for multiple "shards" of data. Each shard belongs to a different RGB contract. This allows
                 Bitmask to:</p>
             <ul>
-                <li>Anchor independent state changes for 10+ different assets in one transaction.</li>
-                <li>Scale beyond a 1:1 asset-to-transaction ratio.</li>
-                <li>Enable complex multi-asset trades without increasing on-chain fees.</li>
+                <li data-i18n="rgb21_section6_li9">Anchor independent state changes for 10+ different assets in one
+                    transaction.</li>
+                <li data-i18n="rgb21_section6_li10">Scale beyond a 1:1 asset-to-transaction ratio.</li>
+                <li data-i18n="rgb21_section6_li11">Enable complex multi-asset trades without increasing on-chain fees.
+                </li>
             </ul>
 
-            <h3>D. Technical Workflow for Cross-Contract Swaps</h3>
+            <h3 data-i18n="rgb21_section6_h3_4">D. Technical Workflow for Cross-Contract Swaps</h3>
             <ol>
-                <li><strong>Offer Creation</strong>: The seller creates an <code>RgbOfferRequest</code> specifying the
+                <li data-i18n="rgb21_section6_li12"><strong>Offer Creation</strong>: The seller creates an
+                    <code>RgbOfferRequest</code> specifying the
                     <code>contract_id</code> they are selling and a <code>OrderValue::Contract</code> as the
                     <code>counter_party</code>.
                 </li>
-                <li><strong>Consignment Bundling</strong>: The offer includes the necessary off-chain data (consigments)
+                <li data-i18n="rgb21_section6_li13"><strong>Consignment Bundling</strong>: The offer includes the
+                    necessary off-chain data (consigments)
                     for both assets.</li>
-                <li><strong>Atomic Witness</strong>: The swap is finalized when a single Bitcoin transaction spending
+                <li data-i18n="rgb21_section6_li14"><strong>Atomic Witness</strong>: The swap is finalized when a single
+                    Bitcoin transaction spending
                     the seals (UTXOs) for both assets is mined. The Tapret commitment in that transaction anchors the
                     state transitions for all involved RGB contracts simultaneously.</li>
             </ol>
 
-            <h2>7. Scriptless Atomic Swaps</h2>
-            <p>RGB21 introduces a paradigm shift in how digital assets are exchanged. Unlike other chains where a "smart
+            <h2 data-i18n="rgb21_section7_title">7. Scriptless Atomic Swaps</h2>
+            <p data-i18n="rgb21_section7_p1">RGB21 introduces a paradigm shift in how digital assets are exchanged.
+                Unlike other chains where a "smart
                 contract" controls the swap logic on-chain, RGB uses <strong>Scriptless Atomic Swaps</strong>.</p>
 
-            <h3>A. The Mechanism</h3>
-            <p>The swap is orchestrated using a <strong>PSBT (Partially Signed Bitcoin Transaction)</strong> that acts
+            <h3 data-i18n="rgb21_section7_h3_1">A. The Mechanism</h3>
+            <p data-i18n="rgb21_section7_p2">The swap is orchestrated using a <strong>PSBT (Partially Signed Bitcoin
+                    Transaction)</strong> that acts
                 as a container for:</p>
             <ul>
-                <li><strong>Buyer's Input</strong>: Bitcoin payment (Sats).</li>
-                <li><strong>Seller's Input</strong>: The UTXO holding the RGB asset (Single-Use Seal).</li>
-                <li><strong>Commitment</strong>: The cryptographic proof transferring the RGB asset to the buyer's new
+                <li data-i18n="rgb21_section7_li1"><strong>Buyer's Input</strong>: Bitcoin payment (Sats).</li>
+                <li data-i18n="rgb21_section7_li2"><strong>Seller's Input</strong>: The UTXO holding the RGB asset
+                    (Single-Use Seal).</li>
+                <li data-i18n="rgb21_section7_li3"><strong>Commitment</strong>: The cryptographic proof transferring the
+                    RGB asset to the buyer's new
                     UTXO.</li>
             </ul>
-            <p>Since both inputs are in the <em>same</em> Bitcoin transaction, the swap is atomic by default. If the
+            <p data-i18n="rgb21_section7_p3">Since both inputs are in the <em>same</em> Bitcoin transaction, the swap is
+                atomic by default. If the
                 transaction is mined, the assets swap. If it isn't, no assets move. There is no middle state and no need
                 for HTLCs (Hash Time Locked Contracts) or complex scripts.</p>
 
-            <h3>B. Why "Scriptless"?</h3>
-            <p>The Bitcoin network sees only a standard transaction. It validates signatures and UTXO availability but
+            <h3 data-i18n="rgb21_section7_h3_2">B. Why "Scriptless"?</h3>
+            <p data-i18n="rgb21_section7_p4">The Bitcoin network sees only a standard transaction. It validates
+                signatures and UTXO availability but
                 remains unaware of the asset transfer happening "inside" the transaction. The asset validation happens
                 entirely <strong>client-side</strong> between the buyer and seller.</p>
 
-            <h3>C. Key Benefits</h3>
+            <h3 data-i18n="rgb21_section7_h3_3">C. Key Benefits</h3>
             <ul>
-                <li><strong>Privacy</strong>: To an outside observer, an atomic swap looks indistinguishable from a
+                <li data-i18n="rgb21_section7_li4"><strong>Privacy</strong>: To an outside observer, an atomic swap
+                    looks indistinguishable from a
                     regular Bitcoin payment.</li>
-                <li><strong>Efficiency</strong>: No complex on-chain scripts mean lower transaction fees and no
+                <li data-i18n="rgb21_section7_li5"><strong>Efficiency</strong>: No complex on-chain scripts mean lower
+                    transaction fees and no
                     blockchain bloat.</li>
-                <li><strong>Safety</strong>: The atomic nature removes counterparty risk without trusted intermediaries.
+                <li data-i18n="rgb21_section7_li6"><strong>Safety</strong>: The atomic nature removes counterparty risk
+                    without trusted intermediaries.
                 </li>
             </ul>
 
-            <h2>8. Summary of Workflow</h2>
+            <h2 data-i18n="rgb21_section8_title">8. Summary of Workflow</h2>
             <ol>
-                <li><strong>Issue</strong>: Define the collection (spec) and tokens (metadata, media).</li>
-                <li><strong>Anchor</strong>: Commit the genesis to a Bitcoin UTXO.</li>
-                <li><strong>Transfer</strong>: Spend the UTXO and provide the recipient with the "consignment" (the
+                <li data-i18n="rgb21_section8_li1"><strong>Issue</strong>: Define the collection (spec) and tokens
+                    (metadata, media).</li>
+                <li data-i18n="rgb21_section8_li2"><strong>Anchor</strong>: Commit the genesis to a Bitcoin UTXO.</li>
+                <li data-i18n="rgb21_section8_li3"><strong>Transfer</strong>: Spend the UTXO and provide the recipient
+                    with the "consignment" (the
                     off-chain proof of history).</li>
-                <li><strong>Validate</strong>: The recipient verifies the proof locally against their Bitcoin node.</li>
+                <li data-i18n="rgb21_section8_li4"><strong>Validate</strong>: The recipient verifies the proof locally
+                    against their Bitcoin node.</li>
             </ol>
 
-            <h2>9. RGB21 and ARK</h2>
+            <h2 data-i18n="rgb21_section9_title">9. RGB21 and ARK</h2>
 
-            <h3>A. Interaction with Bitcoin Layer 2s</h3>
-            <p>RGB is designed to layer on top of Bitcoin and Lightning without altering Bitcoin’s base protocol. It
+            <h3 data-i18n="rgb21_section9_h3_1">A. Interaction with Bitcoin Layer 2s</h3>
+            <p data-i18n="rgb21_section9_p1">RGB is designed to layer on top of Bitcoin and Lightning without altering
+                Bitcoin’s base protocol. It
                 functions over the Lightning Network to provide speed and low cost, while also interoperating with other
                 off-chain infrastructures.</p>
-            <p>In this context, <strong>Ark</strong> — a Bitcoin Layer-2 scaling system built around VTXOs (Virtual
+            <p data-i18n="rgb21_section9_p2">In this context, <strong>Ark</strong> — a Bitcoin Layer-2 scaling system
+                built around VTXOs (Virtual
                 Transaction Outputs) — can serve as a settlement or execution layer for RGB assets:</p>
             <ul>
-                <li><strong>Ark</strong> uses VTXOs to represent value off-chain while preserving the ability for users
+                <li data-i18n="rgb21_section9_li1"><strong>Ark</strong> uses VTXOs to represent value off-chain while
+                    preserving the ability for users
                     to unilaterally exit back to Bitcoin’s base layer.</li>
-                <li><strong>RGB</strong> assets are anchored to Bitcoin UTXOs and validated on clients rather than
+                <li data-i18n="rgb21_section9_li2"><strong>RGB</strong> assets are anchored to Bitcoin UTXOs and
+                    validated on clients rather than
                     on-chain, preserving privacy and scalability.</li>
             </ul>
-            <p>When RGB21 assets are issued or transferred using Ark’s VTXO infrastructure, the combined system benefits
+            <p data-i18n="rgb21_section9_p3">When RGB21 assets are issued or transferred using Ark’s VTXO
+                infrastructure, the combined system benefits
                 from both RGB’s asset programmability and Ark’s scalable off-chain execution.</p>
 
-            <h3>B. Synergies of Deploying RGB21 on Ark</h3>
-            <p>Combining these technologies offers significant advantages:</p>
+            <h3 data-i18n="rgb21_section9_h3_2">B. Synergies of Deploying RGB21 on Ark</h3>
+            <p data-i18n="rgb21_section9_p4">Combining these technologies offers significant advantages:</p>
 
             <ul>
-                <li><strong>Scalability & Performance</strong>: Ark’s VTXOs allow fast off-chain execution of
+                <li data-i18n="rgb21_section9_li3"><strong>Scalability & Performance</strong>: Ark’s VTXOs allow fast
+                    off-chain execution of
                     transactions, batching them efficiently so individual operations don’t congest Bitcoin’s main chain.
                     RGB’s client-side smart contracts verify asset state without broadcasting every update.
-                    <br><em>Result:</em> High-throughput transfers of tokenized assets or <span
-                        class="highlight">UDAs</span> without per-operation on-chain fees.
+                    <br><em data-i18n="rgb21_section9_res1">Result:</em> <span
+                        data-i18n="rgb21_section9_res1_val">High-throughput transfers of tokenized assets or <span
+                            class="highlight">UDAs</span> without per-operation on-chain fees.</span>
                 </li>
-                <li><strong>Lower Costs</strong>: Ark reduces on-chain fees by batching many off-chain actions into
+                <li data-i18n="rgb21_section9_li4"><strong>Lower Costs</strong>: Ark reduces on-chain fees by batching
+                    many off-chain actions into
                     compact settlement transactions. RGB’s model avoids unnecessary on-chain metadata by keeping asset
                     data off-chain.
-                    <br><em>Result:</em> Economical asset issuance and transfers, suitable for micro-transactions or
-                    collectibles.
+                    <br><em data-i18n="rgb21_section9_res2">Result:</em> <span
+                        data-i18n="rgb21_section9_res2_val">Economical asset issuance and transfers, suitable for
+                        micro-transactions or
+                        collectibles.</span>
                 </li>
-                <li><strong>Security Through Bitcoin</strong>: Both RGB and Ark rely on Bitcoin’s base layer for final
+                <li data-i18n="rgb21_section9_li5"><strong>Security Through Bitcoin</strong>: Both RGB and Ark rely on
+                    Bitcoin’s base layer for final
                     settlement and security without requiring protocol changes. Users retain the ability to claim assets
                     or value back on Bitcoin.
-                    <br><em>Result:</em> Strong security guarantees with minimal trust assumptions.
+                    <br><em data-i18n="rgb21_section9_res3">Result:</em> <span
+                        data-i18n="rgb21_section9_res3_val">Strong security guarantees with minimal trust
+                        assumptions.</span>
                 </li>
-                <li><strong>Self-Custody & Privacy</strong>: RGB uses client-side validation, meaning asset owners
+                <li data-i18n="rgb21_section9_li6"><strong>Self-Custody & Privacy</strong>: RGB uses client-side
+                    validation, meaning asset owners
                     validate contract state locally without public broadcast. Ark users maintain control of their VTXOs
                     with exit paths to Bitcoin.
-                    <br><em>Result:</em> Enhanced user control and privacy for ownership and transfer data.
+                    <br><em data-i18n="rgb21_section9_res4">Result:</em> <span
+                        data-i18n="rgb21_section9_res4_val">Enhanced user control and privacy for ownership and transfer
+                        data.</span>
                 </li>
             </ul>
 
-            <p><strong>Programmability + Fast UX</strong>: By combining RGB’s rich asset logic with Ark’s fast off-chain
+            <p data-i18n="rgb21_section9_p5"><strong>Programmability + Fast UX</strong>: By combining RGB’s rich asset
+                logic with Ark’s fast off-chain
                 transaction layer, developers can build applications that offer the user experience of traditional DApps
                 but settle on Bitcoin’s secure base layer.</p>
 
-            <h3>C. Practical Applications</h3>
-            <p>Deploying RGB21 assets on Ark’s infrastructure enables:</p>
+            <h3 data-i18n="rgb21_section9_h3_3">C. Practical Applications</h3>
+            <p data-i18n="rgb21_section9_p6">Deploying RGB21 assets on Ark’s infrastructure enables:</p>
             <ul>
-                <li><strong><span class="highlight">UDA</span> Ecosystems on Bitcoin</strong>: Creation and trading of
+                <li data-i18n="rgb21_section9_li7"><strong><span class="highlight">UDA</span> Ecosystems on
+                        Bitcoin</strong>: Creation and trading of
                     <span class="highlight">UDAs</span> with near-instant transfers using Ark’s off-chain layer, backed
                     by RGB’s smart-asset rules.
                 </li>
-                <li><strong>Digital Asset Markets</strong>: Decentralized marketplaces, auctions, or fractional
+                <li data-i18n="rgb21_section9_li8"><strong>Digital Asset Markets</strong>: Decentralized marketplaces,
+                    auctions, or fractional
                     ownership systems that interact directly with Bitcoin liquidity.</li>
-                <li><strong>Cross-Layer Integration</strong>: Seamless movement of tokens between Lightning, Ark, and
+                <li data-i18n="rgb21_section9_li9"><strong>Cross-Layer Integration</strong>: Seamless movement of tokens
+                    between Lightning, Ark, and
                     Bitcoin L1.</li>
-                <li><strong>New Financial Products</strong>: Issuance of tokenized real-world assets, event tickets,
+                <li data-i18n="rgb21_section9_li10"><strong>New Financial Products</strong>: Issuance of tokenized
+                    real-world assets, event tickets,
                     collectibles, or digital rights, all secured by Bitcoin and transferred efficiently off-chain.</li>
             </ul>
 
-            <h3>D. Implementation Challenges</h3>
-            <p>While the synergy is promising, the technology is in early stages:</p>
+            <h3 data-i18n="rgb21_section9_h3_4">D. Implementation Challenges</h3>
+            <p data-i18n="rgb21_section9_p7">While the synergy is promising, the technology is in early stages:</p>
             <ul>
-                <li><strong>Tooling & Adoption</strong>: Wallets and platforms must evolve to support both standards
+                <li data-i18n="rgb21_section9_li11"><strong>Tooling & Adoption</strong>: Wallets and platforms must
+                    evolve to support both standards
                     simultaneously.</li>
-                <li><strong>Client-Side Validation</strong>: Requires robust local software, presenting a different
+                <li data-i18n="rgb21_section9_li12"><strong>Client-Side Validation</strong>: Requires robust local
+                    software, presenting a different
                     model from global state chains.</li>
-                <li><strong>Data Availability</strong>: Ensuring interoperability across layers remains a nuanced
+                <li data-i18n="rgb21_section9_li13"><strong>Data Availability</strong>: Ensuring interoperability across
+                    layers remains a nuanced
                     engineering challenge.</li>
             </ul>
 
-            <h3>E. Comparison Summary</h3>
+            <h3 data-i18n="rgb21_section9_h3_5">E. Comparison Summary</h3>
             <div class="tech-table-wrapper">
                 <table class="tech-table">
                     <thead>
                         <tr>
-                            <th>Feature</th>
-                            <th>RGB21 on Bitcoin Alone</th>
-                            <th>RGB21 on Ark VTXO Layer</th>
+                            <th data-i18n="rgb21_table3_h1">Feature</th>
+                            <th data-i18n="rgb21_table3_h2">RGB21 on Bitcoin Alone</th>
+                            <th data-i18n="rgb21_table3_h3">RGB21 on Ark VTXO Layer</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Scalability</td>
-                            <td>Off-chain smart assets; limited by Lightning or L1</td>
-                            <td>Fast VTXO-based settlement</td>
+                            <td data-i18n="rgb21_table3_r1_c1">Scalability</td>
+                            <td data-i18n="rgb21_table3_r1_c2">Off-chain smart assets; limited by Lightning or L1</td>
+                            <td data-i18n="rgb21_table3_r1_c3">Fast VTXO-based settlement</td>
                         </tr>
                         <tr>
-                            <td>Cost</td>
-                            <td>Reduced on-chain fees</td>
-                            <td>Significantly lower due to batching</td>
+                            <td data-i18n="rgb21_table3_r2_c1">Cost</td>
+                            <td data-i18n="rgb21_table3_r2_c2">Reduced on-chain fees</td>
+                            <td data-i18n="rgb21_table3_r2_c3">Significantly lower due to batching</td>
                         </tr>
                         <tr>
-                            <td>Security</td>
-                            <td>Bitcoin base layer</td>
-                            <td>Bitcoin base layer + exit guarantees</td>
+                            <td data-i18n="rgb21_table3_r3_c1">Security</td>
+                            <td data-i18n="rgb21_table3_r3_c2">Bitcoin base layer</td>
+                            <td data-i18n="rgb21_table3_r3_c3">Bitcoin base layer + exit guarantees</td>
                         </tr>
                         <tr>
-                            <td>Privacy</td>
-                            <td>Client-side validation</td>
-                            <td>Preserved, plus fewer public proofs</td>
+                            <td data-i18n="rgb21_table3_r4_c1">Privacy</td>
+                            <td data-i18n="rgb21_table3_r4_c2">Client-side validation</td>
+                            <td data-i18n="rgb21_table3_r4_c3">Preserved, plus fewer public proofs</td>
                         </tr>
                         <tr>
-                            <td>UX</td>
-                            <td>Dependent on Lightning support</td>
-                            <td>Native off-chain Ark execution</td>
+                            <td data-i18n="rgb21_table3_r5_c1">UX</td>
+                            <td data-i18n="rgb21_table3_r5_c2">Dependent on Lightning support</td>
+                            <td data-i18n="rgb21_table3_r5_c3">Native off-chain Ark execution</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <h2>10. Conclusion: Entering Bitcoin Season 3</h2>
+            <h2 data-i18n="rgb21_section10_title">10. Conclusion: Entering Bitcoin Season 3</h2>
 
-            <h3>The Evolution of Bitcoin</h3>
-            <p><strong>Bitcoin Season 1</strong> established the asset as the world's premier store of value—Digital
+            <h3 data-i18n="rgb21_section10_h3_1">The Evolution of Bitcoin</h3>
+            <p data-i18n="rgb21_section10_p1"><strong>Bitcoin Season 1</strong> established the asset as the world's
+                premier store of value—Digital
                 Gold.<br>
                 <strong>Bitcoin Season 2</strong> introduced the Lightning Network, Ordinals Inscription, and meta
                 protocols.<br>
                 <strong>Bitcoin Season 3</strong> is the <span class="highlight">Programmable Economy</span>.
             </p>
 
-            <h3>The Programmable Economy</h3>
-            <p>RGB21 is more than just a <span class="highlight">UDA</span> standard; it is a primitive for a completely
+            <h3 data-i18n="rgb21_section10_h3_2">The Programmable Economy</h3>
+            <p data-i18n="rgb21_section10_p2">RGB21 is more than just a <span class="highlight">UDA</span> standard; it
+                is a primitive for a completely
                 new financial system. By combining technical privacy (Client-Side Validation) with unlimited scalability
                 (Off-chain data) and robust security (Bitcoin L1 anchoring), we have unlocked the Holy Grail of digital
                 assets.</p>
 
-            <h3>The Vision</h3>
-            <p>We are moving from "Digital Gold" to "Digital Matter". Assets that are liquid, programmable, and
+            <h3 data-i18n="rgb21_section10_h3_3">The Vision</h3>
+            <p data-i18n="rgb21_section10_p3">We are moving from "Digital Gold" to "Digital Matter". Assets that are
+                liquid, programmable, and
                 sovereign, living directly on the most secure network in history.</p>
 
             <div class="tech-header" style="margin-top: 3rem; margin-bottom: 0; border: none; padding-bottom: 0;">
                 <p class="tech-subtitle" style="font-size: 1.1rem; color: #fff; font-weight: 500;">
-                    This infrastructure—powered by RGB, implemented by BitMask, and accessible via RGB21—lays the
-                    groundwork for the next billion users to interact with Bitcoin not just as a currency, but as the
-                    ultimate platform for truth and value.
+                    <span data-i18n="rgb21_conclusion_text">This infrastructure—powered by RGB, implemented by BitMask,
+                        and accessible via RGB21—lays the
+                        groundwork for the next billion users to interact with Bitcoin not just as a currency, but as
+                        the
+                        ultimate platform for truth and value.</span>
                     <br><br>
-                    <span style="color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;">This is Bitcoin Season
+                    <span style="color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;"
+                        data-i18n="rgb21_season3">This is Bitcoin Season
                         3.</span>
                 </p>
             </div>
@@ -645,15 +599,7 @@
     </main>
 
     <script src="galaxy.js"></script>
-    <script>
-        // Simple splash screen handler for this page
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                const splash = document.getElementById('splash-screen');
-                splash.classList.add('hidden');
-            }, 800);
-        });
-    </script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>

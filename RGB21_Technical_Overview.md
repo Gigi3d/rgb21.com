@@ -108,14 +108,34 @@ The composability is rooted in **Anchor Sharding**. A single Bitcoin transaction
 2. **Consignment Bundling**: The offer includes the necessary off-chain data (consigments) for both assets.
 3. **Atomic Witness**: The swap is finalized when a single Bitcoin transaction spending the seals (UTXOs) for both assets is mined. The Tapret commitment in that transaction anchors the state transitions for all involved RGB contracts simultaneously.
 
-## 7. Summary of Workflow
+## 7. Scriptless Atomic Swaps
+
+RGB21 introduces a paradigm shift in how digital assets are exchanged. Unlike other chains where a "smart contract" controls the swap logic on-chain, RGB uses **Scriptless Atomic Swaps**.
+
+### A. The Mechanism
+The swap is orchestrated using a **PSBT (Partially Signed Bitcoin Transaction)** that acts as a container for:
+- **Buyer's Input**: Bitcoin payment (Sats).
+- **Seller's Input**: The UTXO holding the RGB asset (Single-Use Seal).
+- **Commitment**: The cryptographic proof transferring the RGB asset to the buyer's new UTXO.
+
+Since both inputs are in the *same* Bitcoin transaction, the swap is atomic by default. If the transaction is mined, the assets swap. If it isn't, no assets move. There is no middle state and no need for HTLCs (Hash Time Locked Contracts) or complex scripts.
+
+### B. Why "Scriptless"?
+The Bitcoin network sees only a standard transaction. It validates signatures and UTXO availability but remains unaware of the asset transfer happening "inside" the transaction. The asset validation happens entirely **client-side** between the buyer and seller.
+
+### C. Key Benefits
+- **Privacy**: To an outside observer, an atomic swap looks indistinguishable from a regular Bitcoin payment.
+- **Efficiency**: No complex on-chain scripts mean lower transaction fees and no blockchain bloat.
+- **Safety**: The atomic nature removes counterparty risk without trusted intermediaries.
+
+## 8. Summary of Workflow
 
 1. **Issue**: Define the collection (spec) and tokens (metadata, media).
 2. **Anchor**: Commit the genesis to a Bitcoin UTXO.
 3. **Transfer**: Spend the UTXO and provide the recipient with the "consignment" (the off-chain proof of history).
 4. **Validate**: The recipient verifies the proof locally against their Bitcoin node.
 
-## 8. RGB21 and ARK
+## 9. RGB21 and ARK
 
 ### 1. How RGB Works with Other Bitcoin Layers
 RGB is designed to layer on top of Bitcoin and Lightning without altering Bitcoin’s base protocol. It can function over the Lightning Network to gain speed and low cost, and also interoperates with other off-chain infrastructures.

@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB21 Technical Overview | Bitcoin Season 3 | Space GOAT</title>
-    <meta name="description"
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    <title data-i18n="meta_title_space">Summon Space GOAT | Bitcoin Season 3</title>
+    <meta name="description" data-i18n="meta_description"
         content="The future of Bitcoin art is here. Own a piece of history. Explore GOAT, RGB21 and Bitcoin Season 3. Built for the next billion users on the RGB protocol. #RGB21">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://atomic-mint-ui.vercel.app/space_goat.html">
@@ -13,16 +14,16 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://atomic-mint-ui.vercel.app/space_goat.html">
-    <meta property="og:title" content="Summon Space GOAT | Bitcoin Season 3">
-    <meta property="og:description"
+    <meta property="og:title" data-i18n="meta_title_space" content="Summon Space GOAT | Bitcoin Season 3">
+    <meta property="og:description" data-i18n="meta_description"
         content="The future of Bitcoin art is here. Own a piece of history. Explore GOAT, RGB21 and Bitcoin Season 3. Built for the next billion users on the RGB protocol. #RGB21">
     <meta property="og:image" content="https://atomic-mint-ui.vercel.app/assets/Space.GOAT.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://atomic-mint-ui.vercel.app/space_goat.html">
-    <meta property="twitter:title" content="Summon Space GOAT | Bitcoin Season 3">
-    <meta property="twitter:description"
+    <meta property="twitter:title" data-i18n="meta_title_space" content="Summon Space GOAT | Bitcoin Season 3">
+    <meta property="twitter:description" data-i18n="meta_description"
         content="The future of Bitcoin art is here. Own a piece of history. Built for the next billion users on the RGB protocol. #RGB21">
     <meta property="twitter:image" content="https://atomic-mint-ui.vercel.app/assets/Space.GOAT.png">
 
@@ -56,7 +57,7 @@
 <body class="single-page-mode mode-space-goat">
     <div id="splash-screen">
         <div class="splash-content">
-            <div class="splash-text">INITIALIZING RGB PROTOCOL...</div>
+            <div class="splash-text" data-i18n="splash_loading">INITIALIZING RGB PROTOCOL...</div>
             <div class="splash-bar">
                 <div class="splash-progress"></div>
             </div>
@@ -78,7 +79,7 @@
             <a href="queen_test.html" data-i18n="nav_queen">Queen GOAT</a>
             <a href="nakamoto_goat.html" data-i18n="nav_nakamoto">Nakamoto GOAT</a>
             <a href="space_goat.html" class="active" data-i18n="nav_space">Space GOAT</a>
-            <a href="rgb21_overview.html">RGB21</a>
+            <a href="rgb21_overview.html" data-i18n="nav_rgb21">RGB21</a>
         </nav>
         <div class="user-actions">
             <div class="lang-switcher">
@@ -457,9 +458,8 @@
 
     <button class="floating-mint-cta" data-i18n="summon_btn">Mint @ DIBA.io</button>
 
-    <script src="translations.js" type="module"></script>
-    <script src="main.js" type="module"></script>
     <script src="galaxy.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
