@@ -7,9 +7,8 @@ const translations = {
         total_supply: "TOTAL SUPPLY",
         uda: "UDA",
         mint_date_prefix: "Starts",
-        summon_btn: "Summon {name}",
-        stability: "Mint Progress",
-        progress: "Mint Progress",
+        summon_btn: "Mint @ DIBA.io",
+
         faq_title: "Frequently Asked Questions",
         feature_banner_title: "Bitcoin<br>Season 3<br>-<br>GOAT",
         feature_banner_text: "The GOAT collection chronicles Bitcoin's defining moments, from genesis to the present day.<br>Built on RGB smart contracts with instant atomic swaps on bitcoin layer1, GOAT is a first for Bitcoin. Much like CryptoPunks was for Ethereum.",
@@ -31,7 +30,7 @@ const translations = {
         // Space Specific
         space_subtitle: "REACHING NEW HEIGHTS",
         space_desc: "Leading the charge for mass adoption. Space GOATs scale Bitcoin smart contracts to the infinite ends of the cosmos via the RGB protocol. Simple. Scalable. Infinite.",
-        space_mint_title: "Open mint",
+        space_mint_title: "Whitelist & Open mint",
         space_wl_title: "OG Whitelist 🔒",
         // Queen Specific
         queen_subtitle: "The chicken or Egg",
@@ -113,9 +112,8 @@ const translations = {
         total_supply: "总供应量",
         uda: "UDA",
         mint_date_prefix: "开始时间",
-        summon_btn: "召唤 {name}",
-        stability: "召唤进度",
-        progress: "召唤进度",
+        summon_btn: "在 DIBA 上铸造",
+
         faq_title: "常见问题解答",
         feature_banner_title: "比特币<br>第三季<br>GOAT",
         feature_banner_text: "GOAT 系列记录了从创世至今比特币的决定性时刻。<br>基于具有比特币一层 (bitcoin layer1) 瞬时原子交换功能的 RGB 智能合约构建，GOAT 是比特币的首创。就像 CryptoPunks 对以太坊的意义一样。",

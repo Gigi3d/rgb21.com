@@ -7,7 +7,7 @@ const translations = {
         total_supply: "TOTAL SUPPLY",
         uda: "UDA",
         mint_date_prefix: "Starts",
-        summon_btn: "Summon {name}",
+        summon_btn: "Mint @ DIBA.io",
         stability: "Mint Progress",
         progress: "Mint Progress",
         faq_title: "Frequently Asked Questions",
@@ -32,7 +32,7 @@ const translations = {
         // Space Specific
         space_subtitle: "REACHING NEW HEIGHTS",
         space_desc: "Leading the charge for mass adoption. Space GOATs scale Bitcoin smart contracts to the infinite ends of the cosmos via the RGB protocol. Simple. Scalable. Infinite.",
-        space_mint_title: "Open mint",
+        space_mint_title: "Whitelist & Open mint",
         space_wl_title: "OG Whitelist 🔒",
         // Queen Specific
         queen_subtitle: "The chicken or Egg",
@@ -113,7 +113,7 @@ const translations = {
         total_supply: "总供应量",
         uda: "UDA",
         mint_date_prefix: "开始时间",
-        summon_btn: "召唤 {name}",
+        summon_btn: "在 DIBA 上铸造",
         stability: "召唤进度",
         progress: "召唤进度",
         faq_title: "常见问题解答",
@@ -319,24 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const langManager = new LanguageManager();
 
     // ... (keep the rest of the existing logic) ...
-    // Progress bar animation simulation
-    const progressBar = document.querySelector('.progress-bar');
-    const progressPercent = document.querySelector('.progress-percent');
 
-    if (progressBar && progressPercent) {
-        // Simulate initial progress after load
-        setTimeout(() => {
-            const targetProgress = parseInt(progressPercent.getAttribute('data-percent')) || 0;
-            const targetCount = parseInt(progressPercent.getAttribute('data-count')) || 0;
-            const total = parseInt(progressPercent.getAttribute('data-total')) || 0;
-
-            const formatNumber = (num) => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-            progressBar.style.width = `${targetProgress}%`;
-            progressBar.style.background = '#fbbf24'; // Gold fill for the 70%
-            progressPercent.textContent = `${targetProgress}% (${formatNumber(targetCount)}/${formatNumber(total)})`;
-        }, 800);
-    }
 
     // Atomic Mint button clicks
     const mintButtons = document.querySelectorAll('.mint-btn:not(.disabled), .whitelist-btn, .floating-mint-cta');
@@ -374,17 +357,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mintButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            // If it's the floating CTA, it normally scrolls to top. Let's make it summon if it's "active" or just summon anyway for fun.
-            const originalText = btn.textContent;
-            btn.textContent = 'Summoning...';
-            btn.disabled = true;
-
-            // Mock processing
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.disabled = false;
-                showSuccessModal();
-            }, 1500);
+            // Redirect to diba.io
+            window.open('https://diba.io', '_blank');
         });
     });
 

@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summon Nakamoto GOAT (Full View) | Fairy Guardian Cats</title>
+    <title>RGB21 Technical Overview | Bitcoin Season 3 | Nakamoto GOAT</title>
     <meta name="description"
-        content="The future of Bitcoin art is here. Own a piece of history. Built for the next billion users on the RGB protocol. #RGB21">
+        content="The future of Bitcoin art is here. Own a piece of history. Explore GOAT, RGB21 and Bitcoin Season 3. Built for the next billion users on the RGB protocol. #RGB21">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://atomic-mint-ui.vercel.app/nakamoto_goat.html">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://atomic-mint-ui.vercel.app/nakamoto_goat.html">
     <meta property="og:title" content="Summon Nakamoto GOAT | Bitcoin Season 3">
     <meta property="og:description"
-        content="The future of Bitcoin art is here. Own a piece of history. Built for the next billion users on the RGB protocol. #RGB21">
+        content="The future of Bitcoin art is here. Own a piece of history. Explore GOAT, RGB21 and Bitcoin Season 3. Built for the next billion users on the RGB protocol. #RGB21">
     <meta property="og:image" content="https://atomic-mint-ui.vercel.app/assets/Nakamoto.GOAT.png">
 
     <!-- Twitter -->
@@ -30,6 +32,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="preload" as="image" href="assets/Nakamoto.GOAT.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Nakamoto GOAT",
+      "image": "https://atomic-mint-ui.vercel.app/assets/Nakamoto.GOAT.png",
+      "description": "The future of Bitcoin art is here. Own a piece of history. Built for the next billion users on the RGB protocol.",
+      "brand": {
+        "@type": "Brand",
+        "name": "RGB21"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://atomic-mint-ui.vercel.app/nakamoto_goat.html",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
 </head>
 
 <body class="single-page-mode mode-nakamoto-goat full-area-mode">
@@ -49,22 +70,19 @@
     </div>
     <header class="navbar">
         <div class="logo">
-            <span class="diba">DIBA</span><span class="bitcoin-signet">bitcoin signet</span>
+            <span class="diba">RGB21</span>
         </div>
         <nav class="nav-links">
             <a href="queen_test.html" data-i18n="nav_queen">Queen GOAT</a>
             <a href="nakamoto_goat.html" class="active" data-i18n="nav_nakamoto">Nakamoto GOAT</a>
             <a href="space_goat.html" data-i18n="nav_space">Space GOAT</a>
+            <a href="rgb21_overview.html">RGB21</a>
         </nav>
         <div class="user-actions">
             <div class="lang-switcher">
                 <button class="lang-btn active" data-lang="en">EN</button>
                 <span class="lang-divider">|</span>
                 <button class="lang-btn" data-lang="zh">ZH</button>
-            </div>
-            <span class="user-handle">Lord</span>
-            <div class="user-avatar">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lord" alt="Avatar">
             </div>
             <button class="menu-toggle">
                 <span></span><span></span><span></span>
@@ -78,9 +96,10 @@
             <section class="hero-section reveal">
                 <div class="guardian-card solo">
                     <div class="image-card">
-                        <img src="assets/Nakamoto.GOAT.png" alt="Nakamoto GOAT" class="hero-image">
+                        <img src="assets/Nakamoto.GOAT.png" alt="Nakamoto GOAT - RGB21 Bitcoin Collectible"
+                            class="hero-image" loading="eager">
                         <div class="guardian-overlay">
-                            <span class="fairy-name" data-i18n="nakamoto_name">Nakamoto GOAT</span>
+                            <h1 class="fairy-name" data-i18n="nakamoto_name">Nakamoto GOAT</h1>
                             <span class="fairy-title" data-i18n="hero_collectible">RGB21 collectible</span>
                         </div>
                     </div>
@@ -116,28 +135,27 @@
                                 <span class="countdown-timer" id="nakamoto-timer">00d 00h 00m 00s</span>
                             </div>
                         </div>
-                        <div class="tier-body">
-                            <div class="price-row">
-                                <span class="btc-price">₿ 0.0115 BTC</span>
-                                <span class="usd-price">$1000</span>
-                            </div>
-                            <button class="mint-btn highlighted" data-i18n="summon_btn"
-                                data-i18n-vars='{"name": "Nakamoto GOAT"}'>Summon Nakamoto GOAT</button>
+                        <button class="mint-btn highlighted" data-i18n="summon_btn">Mint @ DIBA.io</button>
+                    </div>
+
+                    <div class="rgb21-promo-card">
+                        <div class="rgb21-header">
+                            <span class="rgb21-title">
+                                <span class="rgb21-icon">⚡</span> Powered by RGB21
+                            </span>
+                        </div>
+                        <div class="rgb21-body">
+                            <p>Client-Side Validated. Bitcoin Native. Infinite Scalability.</p>
+                            <a href="rgb21_overview.html" class="rgb21-link">
+                                Learn More <span>→</span>
+                            </a>
                         </div>
                     </div>
                 </div>
+        </div>
 
-                <div class="total-minted">
-                    <div class="mint-progress-info">
-                        <span data-i18n="stability">Mint Progress</span>
-                        <span class="progress-percent" data-percent="30" data-count="333" data-total="1111">0%
-                            (0/0)</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar gold-fill" style="width: 0%"></div>
-                    </div>
-                </div>
-            </section>
+
+        </section>
         </div>
     </main>
 
@@ -414,7 +432,8 @@
             <p class="modal-text">You have successfully bonded with a Guardian. Your GOAT is now part of the Bitcoin
                 Odyssey.</p>
             <div class="minted-image-container">
-                <img src="assets/Nakamoto.GOAT.png" alt="Minted GOAT" class="minted-image" id="modal-minted-image">
+                <img src="assets/Nakamoto.GOAT.png" alt="Minted Nakamoto GOAT" class="minted-image"
+                    id="modal-minted-image" loading="lazy">
             </div>
             <div class="share-actions">
                 <a href="#" id="share-x-link" target="_blank" class="btn-share-x">
@@ -434,8 +453,7 @@
         <a href="space_goat.html"><span data-i18n="pill_space">Space</span> →</a>
     </div>
 
-    <button class="floating-mint-cta" data-i18n="summon_btn" data-i18n-vars='{"name": "Nakamoto GOAT"}'>Summon Nakamoto
-        GOAT</button>
+    <button class="floating-mint-cta" data-i18n="summon_btn">Mint @ DIBA.io</button>
 
     <script src="translations.js" type="module"></script>
     <script src="main.js" type="module"></script>

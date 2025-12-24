@@ -1005,6 +1005,82 @@ body.dual-page-mode {
 
 
 
+/* RGB21 Promo Card - Premium Design */
+.rgb21-promo-card {
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(10, 10, 25, 0.98) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rgb21-promo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(251, 191, 36, 0.05);
+    border-color: rgba(251, 191, 36, 0.3);
+}
+
+.rgb21-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.rgb21-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-transform: uppercase;
+}
+
+.rgb21-icon {
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+    filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.4));
+}
+
+.rgb21-body p {
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.85rem;
+    font-weight: 400;
+}
+
+.rgb21-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--accent-gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 0.4rem 0;
+}
+
+.rgb21-link:hover {
+    gap: 0.75rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+
 /* Mint Tiers */
 .mint-tiers {
     display: flex;
@@ -1048,7 +1124,7 @@ body.dual-page-mode {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .tier-title-group {
@@ -1163,7 +1239,7 @@ body.dual-page-mode {
     font-size: 1.4rem;
     cursor: pointer;
     border: none;
-    margin-top: 0.5rem;
+    margin-top: 0;
 }
 
 .mint-btn.whitelist-btn {
@@ -1211,42 +1287,7 @@ body.dual-page-mode {
     left: 100%;
 }
 
-/* Progress bar refinement */
-.total-minted {
-    margin-top: 2rem;
-    background: var(--card-bg);
-    padding: 1.25rem 1.5rem;
-    border-radius: 20px;
-    border: 1px solid var(--card-border);
-}
 
-.mint-progress-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.25rem;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.progress-percent {
-    color: var(--accent-gold);
-    font-weight: 700;
-}
-
-.progress-bar-container {
-    width: 100%;
-    height: 8px;
-    background: #222;
-    border-radius: 10px;
-}
-
-.progress-bar {
-    height: 100%;
-    background: #333;
-    /* Darker as requested in screenshot */
-    border-radius: 10px;
-    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 /* Mobile Responsiveness & Deep Optimization */
 @media (max-width: 768px) {
@@ -1326,17 +1367,7 @@ body.dual-page-mode {
         border-radius: 16px;
     }
 
-    /* Progress Section Refinement */
-    .total-minted {
-        margin-top: 1.25rem;
-        padding: 1rem;
-        border-radius: 16px;
-    }
 
-    .mint-progress-info {
-        margin-bottom: 0.75rem;
-        font-size: 0.9rem;
-    }
 
     /* Banner Compression */
     .feature-banner {
