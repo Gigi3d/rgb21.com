@@ -469,12 +469,16 @@ body {
 
     .nav-links a {
         font-size: 1.5rem;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.4s ease;
+        opacity: 1;
+        /* Force visible */
+        transform: translateY(0);
+        margin: 1rem 0;
+        color: #fff !important;
+        /* Force white text */
+        display: block;
     }
 
-    /* Staggered animation for links */
+    /* Staggered animation removed */
     .nav-links.active a {
         opacity: 1;
         transform: translateY(0);
