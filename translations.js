@@ -18,7 +18,7 @@ const translations = {
         faq_demarcation_advanced: "Advanced & Community",
 
         faq_title: "Frequently Asked Questions",
-        feature_banner_title: "Bitcoin<br>Season 3<br>-<br>GOAT",
+        feature_banner_title: "Bitcoin<br>Season 3<br>GOAT",
         feature_banner_text: "The GOAT collection chronicles Bitcoin's defining moments, from genesis to the present day.<br>Built on RGB smart contracts with instant atomic swaps on bitcoin layer1, GOAT is a first for Bitcoin. Much like CryptoPunks was for Ethereum.",
         feature_banner_subtext: "This collection marks Bitcoin Season 3. A turning point where Bitcoin smart contracts enable stablecoins and Real-World Asset Tokenization on Bitcoin and the Lightning network.",
         feature_banner_cta: "Join the pioneers shaping what comes next.",
@@ -57,8 +57,8 @@ const translations = {
         faq_a7: "<div class='faq-rich-content'>\
             <p>The GOAT collection is a story of the Bitcoin Movement, bringing to light critical events in Bitcoin history since genesis. The 11K collection is broken down into 2 distinct power groups:</p>\
             <ul>\
-                <li><span class='highlight'>Space GOATs - 10k</span></li>\
-                <li><span class='highlight'>Nakamoto GOATs - 1k</span></li>\
+                <li><span class='highlight'>Space GOATs: 10k</span></li>\
+                <li><span class='highlight'>Nakamoto GOATs: 1k</span></li>\
             </ul>\
             <p>Every culture has its ten trials. Lü Dongbin faced ten tests before earning inner alchemy and immortality. Mirroring the Exodus story, we created memetic writings into the GOAT collection's narrative, like \"Satoshi's burning bush\". The 10k Space GOATs, each with 1K sub-collection.</p>\
             <p><span class='highlight'>Nakamoto</span> are the elite GOATs. Symbolizing the promised future of <span class='highlight'>Bitcoin Season 3</span>. The holders are elites of this special cause.</p>\
@@ -122,7 +122,7 @@ const translations = {
         rgb21_meta_desc: "Technical overview of RGB21: The official standard for Unique Digital Assets (UDAs) on the RGB protocol. Explore GOAT, RGB21 and Bitcoin Season 3.",
         rgb21_splash: "LOADING KNOWLEDGE BASE...",
         rgb21_header_title: "RGB21: Unique Digital Asset (UDA) Technical Overview",
-        rgb21_header_subtitle: "The standard for Bitcoin Season 3",
+        rgb21_header_subtitle: "The Dawn of Bitcoin Season 3",
         rgb21_intro: "<strong>RGB21</strong> is the official standard for <strong>Unique Digital Assets (<span class='highlight'>UDAs</span>)</strong> on the RGB protocol. Unlike traditional NFTs (e.g., ERC-721 on Ethereum), RGB21 leverages <strong>Client-Side Validation</strong> and <strong>Single-Use Seals</strong> to provide high privacy, scalability, and security anchored directly to the Bitcoin blockchain.",
         rgb21_section1_title: "1. Core Concepts",
         rgb21_section1_h3_1: "Single-Use Seals & Bitcoin Anchoring",
@@ -251,7 +251,7 @@ const translations = {
         rgb21_section9_title: "9. RGB21 and ARK",
         rgb21_section9_h3_1: "A. Interaction with Bitcoin Layer 2s",
         rgb21_section9_p1: "RGB is designed to layer on top of Bitcoin and Lightning without altering Bitcoin’s base protocol. It functions over the Lightning Network to provide speed and low cost, while also interoperating with other off-chain infrastructures.",
-        rgb21_section9_p2: "In this context, <strong>Ark</strong> — a Bitcoin Layer-2 scaling system built around VTXOs (Virtual Transaction Outputs) — can serve as a settlement or execution layer for RGB assets:",
+        rgb21_section9_p2: "In this context, <strong>Ark</strong> (a Bitcoin Layer-2 scaling system built around VTXOs or Virtual Transaction Outputs) can serve as a settlement or execution layer for RGB assets:",
         rgb21_section9_li1: "<strong>Ark</strong> uses VTXOs to represent value off-chain while preserving the ability for users to unilaterally exit back to Bitcoin’s base layer.",
         rgb21_section9_li2: "<strong>RGB</strong> assets are anchored to Bitcoin UTXOs and validated on clients rather than on-chain, preserving privacy and scalability.",
         rgb21_section9_p3: "When RGB21 assets are issued or transferred using Ark’s VTXO infrastructure, the combined system benefits from both RGB’s asset programmability and Ark’s scalable off-chain execution.",
@@ -294,14 +294,14 @@ const translations = {
         rgb21_table3_r5_c3: "Native off-chain Ark execution",
         rgb21_section10_title: "10. Conclusion: Entering Bitcoin Season 3",
         rgb21_section10_h3_1: "The Evolution of Bitcoin",
-        rgb21_section10_p1: "<strong>Bitcoin Season 1</strong> established the asset as the world's premier store of value—Digital Gold.<br><strong>Bitcoin Season 2</strong> introduced the Lightning Network, Ordinals Inscription, and meta protocols.<br><strong>Bitcoin Season 3</strong> is the <span class='highlight'>Programmable Economy</span>.",
+        rgb21_section10_p1: "<strong>Bitcoin Season 1</strong> established the asset as the world's premier store of value: Digital Gold.<br><strong>Bitcoin Season 2</strong> introduced the Lightning Network, Ordinals Inscription, and meta protocols.<br><strong>Bitcoin Season 3</strong> is the <span class='highlight'>Programmable Economy</span>.",
         rgb21_section10_h3_2: "The Programmable Economy",
         rgb21_section10_p2: "RGB21 is more than just a <span class='highlight'>UDA</span> standard; it is a primitive for a completely new financial system. By combining technical privacy (Client-Side Validation) with unlimited scalability (Off-chain data) and robust security (Bitcoin L1 anchoring), we have unlocked the Holy Grail of digital assets.",
         rgb21_section10_h3_3: "The Vision",
         rgb21_section10_p3: "We are moving from \"Digital Gold\" to \"Digital Matter\". Assets that are liquid, programmable, and sovereign, living directly on the most secure network in history.",
-        rgb21_conclusion_text: "This infrastructure—powered by RGB, implemented by BitMask, and accessible via RGB21—lays the groundwork for the next billion users to interact with Bitcoin not just as a currency, but as the ultimate platform for truth and value.",
+        rgb21_conclusion_text: "This infrastructure, powered by RGB, implemented by BitMask, and accessible via RGB21, lays the groundwork for the next billion users to interact with Bitcoin not just as a currency, but as the ultimate platform for truth and value.",
         rgb21_season3: "This is Bitcoin Season 3.",
-        rgb21_footer: "This infrastructure—powered by RGB, implemented by BitMask, and accessible via RGB21—lays the groundwork for the next billion users to interact with Bitcoin not just as a currency, but as the ultimate platform for truth and value. <br><br> <span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>This is Bitcoin Season 3.</span>",
+        rgb21_footer: "This infrastructure, powered by RGB, implemented by BitMask, and accessible via RGB21, lays the groundwork for the next billion users to interact with Bitcoin not just as a currency, but as the ultimate platform for truth and value. <br><br> <span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>This is Bitcoin Season 3.</span>",
     },
     zh: {
         nav_queen: "女王 GOAT",
@@ -415,7 +415,7 @@ const translations = {
         rgb21_meta_desc: "RGB21 技术概览：RGB 协议上独有数字资产 (UDAs) 的官方标准。探索 GOAT、RGB21 和比特币第三季。",
         rgb21_splash: "正在加载知识库...",
         rgb21_header_title: "RGB21: 独有数字资产 (UDA) 技术概览",
-        rgb21_header_subtitle: "比特币第三季的标准",
+        rgb21_header_subtitle: "比特币第三季的曙光",
         rgb21_intro: "<strong>RGB21</strong> 是 RGB 协议上 <strong>独有数字资产 (<span class='highlight'>UDAs</span>)</strong> 的官方标准。与传统的 NFT（如以太坊上的 ERC-721）不同，RGB21 利用 <strong>客户端验证</strong> 和 <strong>单次使用密封</strong> 来提供高度的隐私性、可扩展性和直接锚定在比特币区块链上的安全性。",
         rgb21_section1_title: "1. 核心概念",
         rgb21_section1_h3_1: "单次使用密封与比特币锚定",
@@ -544,7 +544,7 @@ const translations = {
         rgb21_section9_title: "9. RGB21 与 ARK",
         rgb21_section9_h3_1: "A. 与比特币二层网络的交互",
         rgb21_section9_p1: "RGB 旨在层叠在比特币和闪电网络之上，而不改变比特币的基础协议。它在闪电网络上运行以提供速度和低成本，同时与其他链下基础设施互操作。",
-        rgb21_section9_p2: "在这种背景下，<strong>Ark</strong> —— 一个围绕 VTXOs (虚拟交易输出) 构建的比特币二层扩展系统 —— 可以作为 RGB 资产的结算或执行层：",
+        rgb21_section9_p2: "在这种背景下，<strong>Ark</strong>：一个围绕 VTXOs (虚拟交易输出) 构建的比特币二层扩展系统，可以作为 RGB 资产的结算或执行层：",
         rgb21_section9_li1: "<strong>Ark</strong> 使用 VTXOs 在链下表示价值，同时保留用户单方面退出到比特币基础层的能力。",
         rgb21_section9_li2: "<strong>RGB</strong> 资产锚定在比特币 UTXOs 上，并在客户端而非链上进行验证，从而保护隐私和可扩展性。",
         rgb21_section9_p3: "当 RGB21 资产使用 Ark 的 VTXO 基础设施发行或转移时，组合系统将受益于 RGB 的资产可编程性和 Ark 的可扩展链下执行。",
@@ -587,14 +587,14 @@ const translations = {
         rgb21_table3_r5_c3: "原生链下 Ark 执行",
         rgb21_section10_title: "10. 结论：进入比特币第三季",
         rgb21_section10_h3_1: "比特币的演变",
-        rgb21_section10_p1: "<strong>比特币第一季</strong> 将资产确立为世界上首屈一指的价值储存手段——数字黄金。<br><strong>比特币第二季</strong> 引入了闪电网络、Ordinals 铭文和元协议。<br><strong>比特币第三季</strong> 是 <span class='highlight'>可编程经济</span>。",
+        rgb21_section10_p1: "<strong>比特币第一季</strong> 将资产确立为世界上首屈一指的价值储存手段：数字黄金。<br><strong>比特币第二季</strong> 引入了闪电网络、Ordinals 铭文和元协议。<br><strong>比特币第三季</strong> 是 <span class='highlight'>可编程经济</span>。",
         rgb21_section10_h3_2: "可编程经济",
         rgb21_section10_p2: "RGB21 不仅仅是一个 <span class='highlight'>UDA</span> 标准；它是全新金融系统的基石。通过将技术隐私（客户端验证）与无限扩展性（链下数据）以及强大的安全性（比特币 L1 锚定）相结合，我们解锁了数字资产的“圣杯”。",
         rgb21_section10_h3_3: "愿景",
         rgb21_section10_p3: "我们正在从“数字黄金”走向“数字物质”。资产是流动的、可编程的、主权的，直接存在于历史上最安全的网络之上。",
-        rgb21_conclusion_text: "这一基础设施——由 RGB 驱动，由 BitMask 实现，由 RGB21 提供接入——为下十亿用户不仅将比特币视为货币，而且将其视为真理与价值的终极平台奠定了基础。",
+        rgb21_conclusion_text: "这一基础设施，由 RGB 驱动，由 BitMask 实现，由 RGB21 提供接入，为下十亿用户不仅将比特币视为货币，而且将其视为真理与价值的终极平台奠定了基础。",
         rgb21_season3: "这就是比特币第三季。",
-        rgb21_footer: "这一基础设施——由 RGB 驱动，由 BitMask 实现，由 RGB21 提供接入——为下十亿用户不仅将比特币视为货币，而且将其视为真理与价值的终极平台奠定了基础。<br><br><span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>这就是比特币第三季。</span>",
+        rgb21_footer: "这一基础设施，由 RGB 驱动，由 BitMask 实现，由 RGB21 提供接入，为下十亿用户不仅将比特币视为货币，而且将其视为真理与价值的终极平台奠定了基础。<br><br><span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>这就是比特币第三季。</span>",
     }
 };
 
