@@ -7,4 +7,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://atomic-mint-ui.vercel.app/sitemap.xml
+Sitemap: https://www.rgb21.com/sitemap.xml
