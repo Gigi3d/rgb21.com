@@ -299,9 +299,9 @@ const translations = {
         rgb21_section10_p2: "RGB21 is more than just a <span class='highlight'>UDA</span> standard; it is a primitive for a completely new financial system. By combining technical privacy (Client-Side Validation) with unlimited scalability (Off-chain data) and robust security (Bitcoin L1 anchoring), we have unlocked the Holy Grail of digital assets.",
         rgb21_section10_h3_3: "The Vision",
         rgb21_section10_p3: "We are moving from \"Digital Gold\" to \"Digital Matter\". Assets that are liquid, programmable, and sovereign, living directly on the most secure network in history.",
-        rgb21_conclusion_text: "The standard for sovereign digital matter. Forged by RGB and implemented by BitMask, this infrastructure anchors absolute truth onto the most secure foundation in history.",
+        rgb21_conclusion_text: "Welcome to the Dawn of Bitcoin Season 3. Forged by RGB and implemented by BitMask, this infrastructure anchors absolute truth onto the most secure foundation in history.",
         rgb21_season3: "This is Bitcoin Season 3.",
-        rgb21_footer: "The standard for sovereign digital matter. Forged by RGB and implemented by BitMask, this infrastructure anchors absolute truth onto the most secure foundation in history. <br><br> <span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>This is Bitcoin Season 3.</span>",
+        rgb21_footer: "Welcome to the Dawn of Bitcoin Season 3. Forged by RGB and implemented by BitMask, this infrastructure anchors absolute truth onto the most secure foundation in history. <br><br> <span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>This is Bitcoin Season 3.</span>",
     },
     zh: {
         nav_queen: "女王 GOAT",
@@ -592,9 +592,9 @@ const translations = {
         rgb21_section10_p2: "RGB21 不仅仅是一个 <span class='highlight'>UDA</span> 标准；它是全新金融系统的基石。通过将技术隐私（客户端验证）与无限扩展性（链下数据）以及强大的安全性（比特币 L1 锚定）相结合，我们解锁了数字资产的“圣杯”。",
         rgb21_section10_h3_3: "愿景",
         rgb21_section10_p3: "我们正在从“数字黄金”走向“数字物质”。资产是流动的、可编程的、主权的，直接存在于历史上最安全的网络之上。",
-        rgb21_conclusion_text: "主权数字物质的标准。由 RGB 驱动，由 BitMask 实现，这一基础设施将绝对真理锚定在历史上最安全的基础之上。",
+        rgb21_conclusion_text: "欢迎来到比特币第三季的曙光。由 RGB 驱动，由 BitMask 实现，这一基础设施将绝对真理锚定在历史上最安全的基础之上。",
         rgb21_season3: "这就是比特币第三季。",
-        rgb21_footer: "主权数字物质的标准。由 RGB 驱动，由 BitMask 实现，这一基础设施将绝对真理锚定在历史上最安全的基础之上。<br><br><span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>这就是比特币第三季。</span>",
+        rgb21_footer: "欢迎来到比特币第三季的曙光。由 RGB 驱动，由 BitMask 实现，这一基础设施将绝对真理锚定在历史上最安全的基础之上。<br><br><span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>这就是比特币第三季。</span>",
     }
 };
 
