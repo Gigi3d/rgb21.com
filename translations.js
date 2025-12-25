@@ -112,6 +112,11 @@ const translations = {
         meta_title_queen: "Summon Queen GOAT | Bitcoin Season 3",
         meta_title_rgb21: "RGB21 Technical Overview | Bitcoin Season 3",
         meta_title_base: "Atomic Mint | Bitcoin Season 3",
+        // Modal
+        modal_summoned: "SUMMONED!",
+        modal_desc: "You have successfully bonded with a Guardian. Your GOAT is now part of the Bitcoin Odyssey.",
+        modal_close: "Close",
+        share_on_x: "Share on X",
         // RGB21 Overview Specific
         rgb21_page_title: "RGB21 Technical Overview | Bitcoin Season 3",
         rgb21_meta_desc: "Technical overview of RGB21: The official standard for Unique Digital Assets (UDAs) on the RGB protocol. Explore GOAT, RGB21 and Bitcoin Season 3.",
@@ -294,6 +299,8 @@ const translations = {
         rgb21_section10_p2: "RGB21 is more than just a <span class='highlight'>UDA</span> standard; it is a primitive for a completely new financial system. By combining technical privacy (Client-Side Validation) with unlimited scalability (Off-chain data) and robust security (Bitcoin L1 anchoring), we have unlocked the Holy Grail of digital assets.",
         rgb21_section10_h3_3: "The Vision",
         rgb21_section10_p3: "We are moving from \"Digital Gold\" to \"Digital Matter\". Assets that are liquid, programmable, and sovereign, living directly on the most secure network in history.",
+        rgb21_conclusion_text: "This infrastructure—powered by RGB, implemented by BitMask, and accessible via RGB21—lays the groundwork for the next billion users to interact with Bitcoin not just as a currency, but as the ultimate platform for truth and value.",
+        rgb21_season3: "This is Bitcoin Season 3.",
         rgb21_footer: "This infrastructure—powered by RGB, implemented by BitMask, and accessible via RGB21—lays the groundwork for the next billion users to interact with Bitcoin not just as a currency, but as the ultimate platform for truth and value. <br><br> <span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>This is Bitcoin Season 3.</span>",
     },
     zh: {
@@ -398,6 +405,11 @@ const translations = {
         meta_title_queen: "召唤女王 GOAT | 比特币第三季",
         meta_title_rgb21: "RGB21 技术概览 | 比特币第三季",
         meta_title_base: "原子铸造 | 比特币第三季",
+        // Modal
+        modal_summoned: "已召唤！",
+        modal_desc: "您已成功与守护者建立契约。您的 GOAT 现已成为比特币奥德赛的一部分。",
+        modal_close: "关闭",
+        share_on_x: "在 X 上分享",
         // RGB21 Overview Specific
         rgb21_page_title: "RGB21 技术细节 | 比特币第三季",
         rgb21_meta_desc: "RGB21 技术概览：RGB 协议上独有数字资产 (UDAs) 的官方标准。探索 GOAT、RGB21 和比特币第三季。",
@@ -580,6 +592,8 @@ const translations = {
         rgb21_section10_p2: "RGB21 不仅仅是一个 <span class='highlight'>UDA</span> 标准；它是全新金融系统的基石。通过将技术隐私（客户端验证）与无限扩展性（链下数据）以及强大的安全性（比特币 L1 锚定）相结合，我们解锁了数字资产的“圣杯”。",
         rgb21_section10_h3_3: "愿景",
         rgb21_section10_p3: "我们正在从“数字黄金”走向“数字物质”。资产是流动的、可编程的、主权的，直接存在于历史上最安全的网络之上。",
+        rgb21_conclusion_text: "这一基础设施——由 RGB 驱动，由 BitMask 实现，由 RGB21 提供接入——为下十亿用户不仅将比特币视为货币，而且将其视为真理与价值的终极平台奠定了基础。",
+        rgb21_season3: "这就是比特币第三季。",
         rgb21_footer: "这一基础设施——由 RGB 驱动，由 BitMask 实现，由 RGB21 提供接入——为下十亿用户不仅将比特币视为货币，而且将其视为真理与价值的终极平台奠定了基础。<br><br><span style='color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;'>这就是比特币第三季。</span>",
     }
 };

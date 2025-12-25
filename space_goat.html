@@ -39,22 +39,27 @@
       "@type": "Product",
       "name": "Space GOAT",
       "image": "https://atomic-mint-ui.vercel.app/assets/Space.GOAT.png",
-      "description": "The future of Bitcoin art is here. Own a piece of history. Built for the next billion users on the RGB protocol.",
+      "description": "Leading the charge for mass adoption, Space GOATs spread the power of Bitcoin smart contracts to the cosmos. Built on the RGB protocol for the next billion users.",
       "brand": {
         "@type": "Brand",
         "name": "RGB21"
       },
+      "sku": "GOAT-SPACE-001",
+      "mpn": "RGB21-SPACE",
       "offers": {
         "@type": "Offer",
         "url": "https://atomic-mint-ui.vercel.app/space_goat.html",
         "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
+        "price": "0.00",
+        "availability": "https://schema.org/PreOrder",
+        "validFrom": "2026-01-21"
       }
     }
     </script>
 </head>
 
 <body class="single-page-mode mode-space-goat">
+    <div class="mobile-menu-overlay"></div>
     <div id="splash-screen">
         <div class="splash-content">
             <div class="splash-text" data-i18n="splash_loading">INITIALIZING RGB PROTOCOL...</div>
@@ -87,7 +92,7 @@
                 <span class="lang-divider">|</span>
                 <button class="lang-btn" data-lang="zh">ZH</button>
             </div>
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -122,7 +127,7 @@
                         <span class="label" data-i18n="total_supply">TOTAL SUPPLY</span>
                         <span class="value">10,000</span>
                     </div>
-                    <span class="uda-tag">UDA</span>
+                    <span class="uda-tag" data-i18n="uda_tag">UDA</span>
                 </div>
 
                 <div class="tier-card active highlighted-tier solo-tier">
@@ -144,13 +149,14 @@
                 <div class="rgb21-promo-card">
                     <div class="rgb21-header">
                         <span class="rgb21-title">
-                            <span class="rgb21-icon">⚡</span> Powered by RGB21
+                            <span class="rgb21-icon">⚡</span> <span data-i18n="powered_by_rgb21">Powered by RGB21</span>
                         </span>
                     </div>
                     <div class="rgb21-body">
-                        <p>Client-Side Validated. Bitcoin Native. Infinitely Scalable Smart Contracts.</p>
+                        <p data-i18n="rgb21_promo_text">Client-Side Validated. Bitcoin Native. Infinitely Scalable Smart
+                            Contracts.</p>
                         <a href="rgb21_overview.html" class="rgb21-link">
-                            Learn More <span>→</span>
+                            <span data-i18n="learn_more">Learn More</span> <span>→</span>
                         </a>
                     </div>
                 </div>
@@ -340,7 +346,7 @@
             </div>
 
             <div class="faq-demarcation">
-                <span>The Ecosystem</span>
+                <span data-i18n="faq_demarcation_ecosystem">The Ecosystem</span>
             </div>
 
             <div class="faq-item">
@@ -397,7 +403,7 @@
             </div>
 
             <div class="faq-demarcation">
-                <span>Advanced & Community</span>
+                <span data-i18n="faq_demarcation_advanced">Advanced & Community</span>
             </div>
 
             <div class="faq-item">
@@ -420,8 +426,9 @@
     <div id="success-modal" class="modal-overlay">
         <div class="modal-content">
             <div class="success-icon">✨</div>
-            <h2 class="modal-title">SUMMONED!</h2>
-            <p class="modal-text">You have successfully bonded with a Guardian. Your GOAT is now part of the Bitcoin
+            <h2 class="modal-title" data-i18n="modal_summoned">SUMMONED!</h2>
+            <p class="modal-text" data-i18n="modal_desc">You have successfully bonded with a Guardian. Your GOAT is now
+                part of the Bitcoin
                 Odyssey.</p>
             <div class="minted-image-container">
                 <img src="assets/Space.GOAT.png" alt="Minted Space GOAT" class="minted-image" id="modal-minted-image"
@@ -433,9 +440,9 @@
                         <path
                             d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.25h-6.657l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                     </svg>
-                    Share on X
+                    <span data-i18n="share_on_x">Share on X</span>
                 </a>
-                <button class="btn-close-modal" id="close-modal-btn">Close</button>
+                <button class="btn-close-modal" id="close-modal-btn" data-i18n="modal_close">Close</button>
             </div>
         </div>
     </div>

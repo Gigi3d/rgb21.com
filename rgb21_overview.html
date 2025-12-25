@@ -22,17 +22,23 @@
       "@context": "https://schema.org",
       "@type": "TechArticle",
       "headline": "RGB21 Technical Overview | Bitcoin Season 3",
-      "description": "Technical overview of RGB21: The official standard for Unique Digital Assets (UDAs) on the RGB protocol.",
+      "description": "Technical overview of RGB21: The official standard for Unique Digital Assets (UDAs) on the RGB protocol. Explore GOAT, RGB21 and Bitcoin Season 3.",
+      "keywords": "RGB21, RGB, Bitcoin, Smart Contracts, UDA, Bitcoin Season 3",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://atomic-mint-ui.vercel.app/rgb21_overview.html"
+      },
       "author": {
         "@type": "Organization",
-        "name": "RGB21"
+        "name": "RGB21",
+        "url": "https://atomic-mint-ui.vercel.app"
       },
       "publisher": {
         "@type": "Organization",
         "name": "RGB21",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://atomic-mint-ui.vercel.app/assets/logo.png"
+          "url": "https://atomic-mint-ui.vercel.app/assets/Space.GOAT.png"
         }
       }
     }
@@ -47,6 +53,7 @@
 </head>
 
 <body class="single-page-mode mode-rgb21-overview">
+    <div class="mobile-menu-overlay"></div>
     <div id="splash-screen">
         <div class="splash-content">
             <div class="splash-text" data-i18n="rgb21_splash">LOADING KNOWLEDGE BASE...</div>
@@ -80,7 +87,7 @@
                 <span class="lang-divider">|</span>
                 <button class="lang-btn" data-lang="zh">ZH</button>
             </div>
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -582,19 +589,17 @@
                 liquid, programmable, and
                 sovereign, living directly on the most secure network in history.</p>
 
-            <div class="tech-header" style="margin-top: 3rem; margin-bottom: 0; border: none; padding-bottom: 0;">
-                <p class="tech-subtitle" style="font-size: 1.1rem; color: #fff; font-weight: 500;">
-                    <span data-i18n="rgb21_conclusion_text">This infrastructure—powered by RGB, implemented by BitMask,
-                        and accessible via RGB21—lays the
-                        groundwork for the next billion users to interact with Bitcoin not just as a currency, but as
-                        the
-                        ultimate platform for truth and value.</span>
-                    <br><br>
-                    <span style="color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;"
-                        data-i18n="rgb21_season3">This is Bitcoin Season
-                        3.</span>
-                </p>
-            </div>
+            <p class="tech-subtitle" style="font-size: 1.1rem; color: #fff; font-weight: 500;" data-i18n="rgb21_footer">
+                This infrastructure—powered by RGB, implemented by BitMask,
+                and accessible via RGB21—lays the groundwork for the next billion users to interact with Bitcoin not
+                just as a currency, but as
+                the
+                ultimate platform for truth and value.
+                <br><br>
+                <span style="color: var(--accent-gold); font-weight: 700; font-size: 1.3rem;">This is Bitcoin Season
+                    3.</span>
+            </p>
+
         </div>
     </main>
 
