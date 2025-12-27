@@ -256,9 +256,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-i18n="rgb21_table2_r1_c1">Data Storage</td>
-                            <td data-i18n="rgb21_table2_r1_c2">Off-chain (Client-side)</td>
-                            <td data-i18n="rgb21_table2_r1_c3">On-chain (Witness data)</td>
+                            <td data-i18n="rgb21_table2_r1_c1">Programmability</td>
+                            <td data-i18n="rgb21_table2_r1_c2">Advanced (Smart Contracts)</td>
+                            <td data-i18n="rgb21_table2_r1_c3">Basic (Static inscriptions)</td>
                         </tr>
                         <tr>
                             <td data-i18n="rgb21_table2_r2_c1">Privacy</td>
@@ -266,24 +266,19 @@
                             <td data-i18n="rgb21_table2_r2_c3">None (Publicly visible)</td>
                         </tr>
                         <tr>
-                            <td data-i18n="rgb21_table2_r3_c1">Scalability</td>
-                            <td data-i18n="rgb21_table2_r3_c2">Unlimited (Off-chain data)</td>
-                            <td data-i18n="rgb21_table2_r3_c3">Limited (Block space constraints)</td>
+                            <td data-i18n="rgb21_table2_r3_c1">Fees</td>
+                            <td data-i18n="rgb21_table2_r3_c2">Minimal (Payment for anchor only)</td>
+                            <td data-i18n="rgb21_table2_r3_c3">High (Payment for data bytes)</td>
                         </tr>
                         <tr>
-                            <td data-i18n="rgb21_table2_r4_c1">Fees</td>
-                            <td data-i18n="rgb21_table2_r4_c2">Minimal (Payment for anchor only)</td>
-                            <td data-i18n="rgb21_table2_r4_c3">High (Payment for data bytes)</td>
+                            <td data-i18n="rgb21_table2_r4_c1">Network Impact</td>
+                            <td data-i18n="rgb21_table2_r4_c2">None (Zero UTXO bloat)</td>
+                            <td data-i18n="rgb21_table2_r4_c3">High (Permanent chain bloat)</td>
                         </tr>
                         <tr>
-                            <td data-i18n="rgb21_table2_r5_c1">Programmability</td>
-                            <td data-i18n="rgb21_table2_r5_c2">Advanced (Smart contracts)</td>
-                            <td data-i18n="rgb21_table2_r5_c3">Basic (Static inscriptions)</td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="rgb21_table2_r6_c1">Impact on Network</td>
-                            <td data-i18n="rgb21_table2_r6_c2">None (Zero UTXO bloat)</td>
-                            <td data-i18n="rgb21_table2_r6_c3">High (Permanent chain bloat)</td>
+                            <td data-i18n="rgb21_table2_r5_c1">Scalability</td>
+                            <td data-i18n="rgb21_table2_r5_c2">Unlimited (Off-chain data)</td>
+                            <td data-i18n="rgb21_table2_r5_c3">Limited (Block space constraints)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -454,39 +449,18 @@
             <p data-i18n="rgb21_section9_p4">Combining these technologies offers significant advantages:</p>
 
             <ul>
-                <li data-i18n="rgb21_section9_li3"><strong>Scalability & Performance</strong>: Ark’s VTXOs allow fast
-                    off-chain execution of
-                    transactions, batching them efficiently so individual operations don’t congest Bitcoin’s main chain.
-                    RGB’s client-side smart contracts verify asset state without broadcasting every update.
-                    <br><em data-i18n="rgb21_section9_res1">Result:</em> <span
-                        data-i18n="rgb21_section9_res1_val">High-throughput transfers of tokenized assets or <span
-                            class="highlight">UDAs</span> without per-operation on-chain fees.</span>
-                </li>
-                <li data-i18n="rgb21_section9_li4"><strong>Lower Costs</strong>: Ark reduces on-chain fees by batching
-                    many off-chain actions into
-                    compact settlement transactions. RGB’s model avoids unnecessary on-chain metadata by keeping asset
-                    data off-chain.
-                    <br><em data-i18n="rgb21_section9_res2">Result:</em> <span
-                        data-i18n="rgb21_section9_res2_val">Economical asset issuance and transfers, suitable for
-                        micro-transactions or
-                        collectibles.</span>
-                </li>
-                <li data-i18n="rgb21_section9_li5"><strong>Security Through Bitcoin</strong>: Both RGB and Ark rely on
-                    Bitcoin’s base layer for final
-                    settlement and security without requiring protocol changes. Users retain the ability to claim assets
-                    or value back on Bitcoin.
-                    <br><em data-i18n="rgb21_section9_res3">Result:</em> <span
-                        data-i18n="rgb21_section9_res3_val">Strong security guarantees with minimal trust
-                        assumptions.</span>
-                </li>
-                <li data-i18n="rgb21_section9_li6"><strong>Self-Custody & Privacy</strong>: RGB uses client-side
-                    validation, meaning asset owners
-                    validate contract state locally without public broadcast. Ark users maintain control of their VTXOs
-                    with exit paths to Bitcoin.
-                    <br><em data-i18n="rgb21_section9_res4">Result:</em> <span
-                        data-i18n="rgb21_section9_res4_val">Enhanced user control and privacy for ownership and transfer
-                        data.</span>
-                </li>
+                <li data-i18n="rgb21_section9_li3"><strong>Scalability</strong> Ark batches transactions to prevent
+                    mainnet congestion, while RGB validates state locally. This enables high-throughput transfers with
+                    zero on-chain footprint for individual operations.</li>
+                <li data-i18n="rgb21_section9_li4"><strong>Lower Costs</strong> Batching operations into a single
+                    settlement transaction drastically reduces fees. RGB further minimizes cost by keeping asset
+                    metadata off-chain, making micro-transactions and collectibles economically viable.</li>
+                <li data-i18n="rgb21_section9_li5"><strong>Security</strong> Both protocols anchor to the Bitcoin base
+                    layer for final settlement. Users retain full self-custody and can verify their own assets with
+                    minimal trust assumptions.</li>
+                <li data-i18n="rgb21_section9_li6"><strong>Privacy</strong> Because RGB validates data privately on the
+                    client, and Ark VTXOs settle off-chain, asset ownership and transfer history remain far more private
+                    than on traditional ledgers.</li>
             </ul>
 
             <p data-i18n="rgb21_section9_p5"><strong>Programmability + Fast UX</strong>: By combining RGB’s rich asset
